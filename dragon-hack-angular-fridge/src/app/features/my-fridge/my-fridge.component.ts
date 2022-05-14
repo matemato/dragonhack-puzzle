@@ -14,33 +14,32 @@ export class MyFridgeComponent implements OnInit {
     this.checkMobile()
   }
   isMobile = false;
-  ingredients: Item[];
+  ingredients: Item[] = [];
+  selectedIngredients: any[] = [];
 
 
-  selectedCountries: any[] = [];
   showClosedFridge = true;
   showOpenFridge = false;
 
+  selectedIngredient: any;
+
+  deleteDialogOpen = false;
+
+  addEditDialogOpen = false;
+  isEdit = false;
+
   item: Item = {
     experationDate: new Date(),
-    name: 'banana',
-    id: 5
+    name: '',
+    id: null
   }
 
   constructor(private fridgeService: FridgeService) {
-    this.ingredients = [
-      {name: "Banana", experationDate: new Date()},
-      {name: "OatMeal", experationDate: new Date()},
-      {name: "Milk", experationDate: new Date()},
-      {name: "Puding", experationDate: new Date()},
-      {name: "Fuckery", experationDate: new Date()},
-    ];
   }
 
   ngOnInit(): void {
-    this.checkMobile()
-    this.fridgeService.store(this.item).subscribe()
-    this.fridgeService.getAll().subscribe(res => console.log(res))
+    this.checkMobile();
+    this.getAllItems();
   }
 
   toggleFridge() {
@@ -50,5 +49,40 @@ export class MyFridgeComponent implements OnInit {
 
   checkMobile() {
     this.isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+  openDialog(item: Item | null, openDelete: boolean,$event: Event,isEdit = false) {
+    $event.stopPropagation()
+    this.selectedIngredient = item;
+    console.log(this.selectedIngredient)
+    this.isEdit = isEdit;
+    openDelete ? this.deleteDialogOpen = true : this.addEditDialogOpen = true;
+  }
+
+  closeDeleteDialog(event: any) {
+    if(event) {
+      this.fridgeService.delete(this.selectedIngredient.id).subscribe(()=> {
+        this.getAllItems();
+      })
+    }
+    this.deleteDialogOpen = false;
+
+  }
+
+  getAllItems() {
+    this.fridgeService.getAll().subscribe(res => this.ingredients = res)
+  }
+
+  closeAddEditDialog($event: Item | null) {
+    if (!this.isEdit) {
+      this.fridgeService.store($event).subscribe(()=>{
+        this.getAllItems()
+      })
+    } else {
+      this.fridgeService.update($event).subscribe(()=>{
+        this.getAllItems()
+      })
+    }
+    this.addEditDialogOpen = false;
   }
 }

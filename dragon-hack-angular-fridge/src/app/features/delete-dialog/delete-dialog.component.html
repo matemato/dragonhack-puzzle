@@ -1,0 +1,15 @@
+
+<p-dialog
+  [(visible)]="show"
+  header="Delete Dialog"
+  [modal]="true"
+  [style]="{width: '50vw'}"
+  [draggable]="false"
+  [resizable]="false">
+  <p>Are you sure you want to delete the following ingredient?</p>
+  <b *ngIf="ingredient">{{ingredient.name}}</b>
+  <ng-template pTemplate="footer">
+    <p-button icon="pi pi-check" (click)="response.emit(true)" label="Yes" class="p-button-text"></p-button>
+    <p-button icon="pi pi-times" (click)="response.emit(false)" label="No"></p-button>
+  </ng-template>
+</p-dialog>

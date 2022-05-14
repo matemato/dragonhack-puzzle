@@ -8,25 +8,38 @@ import { MyFridgeComponent } from './features/my-fridge/my-fridge.component';
 import {HttpClientModule} from "@angular/common/http";
 import {CommonModule} from "@angular/common";
 import {ListboxModule} from "primeng/listbox";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RippleModule} from "primeng/ripple";
 import {ButtonModule} from "primeng/button";
+import { DeleteDialogComponent } from './features/delete-dialog/delete-dialog.component';
+import {DialogModule} from "primeng/dialog";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { AddEditDialogComponent } from './features/add-edit-dialog/add-edit-dialog.component';
+import {CalendarModule} from "primeng/calendar";
+import {InputTextModule} from "primeng/inputtext";
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyFridgeComponent
+    MyFridgeComponent,
+    DeleteDialogComponent,
+    AddEditDialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     TabMenuModule,
     HttpClientModule,
     CommonModule,
     ListboxModule,
     FormsModule,
     RippleModule,
-    ButtonModule
+    ButtonModule,
+    DialogModule,
+    ReactiveFormsModule,
+    CalendarModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]

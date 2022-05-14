@@ -1,13 +1,13 @@
 <ng-container *ngIf="!isMobile">
-  <div class="content-before" (click)="toggleFridge()" *ngIf="showClosedFridge"></div>
-  <div class="content" *ngIf="showOpenFridge">
+  <div (click)="toggleFridge()" *ngIf="showClosedFridge" class="content-before"></div>
+  <div *ngIf="showOpenFridge" class="content">
     <div class="ingredients">
-      <p-listbox [options]="ingredients"
-                 [(ngModel)]="selectedCountries"
+      <p-listbox [(ngModel)]="selectedIngredients"
                  [checkbox]="true"
+                 [listStyle]="{'height':'405px'}"
                  [multiple]="true"
-                 optionLabel="name"
-                 [listStyle]="{'height':'405px'}">
+                 [options]="ingredients"
+                 optionLabel="name">
         <ng-template let-country pTemplate="item">
           <div class="ingredient-item">
             <div>
@@ -15,16 +15,30 @@
               <div>{{country.experationDate.toLocaleDateString()}}</div>
             </div>
             <div class="item-buttons">
-              <button pButton pRipple type="button" icon="pi pi-search"  class="p-button-help"></button>
-              <button pButton pRipple type="button" icon="pi pi-times" class="p-button-danger"></button>
+              <button class="p-button-help"
+                      (click)="openDialog(country,false, $event, true);"
+                      icon="pi pi-search"
+                      pButton
+                      pRipple
+                      type="button"></button>
+              <button (click)="openDialog(country,true, $event);"
+                      class="p-button-danger"
+                      icon="pi pi-times"
+                      pButton pRipple
+                      type="button"></button>
             </div>
           </div>
         </ng-template>
       </p-listbox>
     </div>
     <div class="buttons">
-      <button pButton pRipple type="button" label="Add Ingredient" class="p-button-raised p-button-success add-button"></button>
-      <button pButton pRipple type="button" label="Search For Recipe" class="p-button-info recipe-button"></button>
+      <button (click)="openDialog(null,false,$event)"
+              class="p-button-raised p-button-success add-button"
+              label="Add Ingredient"
+              pButton pRipple
+              type="button">
+      </button>
+      <button class="p-button-info recipe-button" label="Search For Recipe" pButton pRipple type="button"></button>
     </div>
   </div>
 </ng-container>
@@ -32,12 +46,12 @@
 <ng-container *ngIf="this.isMobile">
   <div class="content-mobile">
     <div class="ingredients-mobile">
-      <p-listbox [options]="ingredients"
-                 [(ngModel)]="selectedCountries"
+      <p-listbox [(ngModel)]="selectedIngredients"
                  [checkbox]="true"
+                 [listStyle]="{'height':'405px'}"
                  [multiple]="true"
-                 optionLabel="name"
-                 [listStyle]="{'height':'405px'}">
+                 [options]="ingredients"
+                 optionLabel="name">
         <ng-template let-country pTemplate="item">
           <div class="ingredient-item">
             <div>
@@ -45,8 +59,9 @@
               <div>{{country.experationDate.toLocaleDateString()}}</div>
             </div>
             <div class="item-buttons">
-              <button pButton pRipple type="button" icon="pi pi-search"  class="p-button-help"></button>
-              <button pButton pRipple type="button" icon="pi pi-times" class="p-button-danger"></button>
+              <button class="p-button-help" icon="pi pi-search" pButton pRipple type="button"></button>
+              <button (click)="openDialog(item,true,$event)" class="p-button-danger" icon="pi pi-times" pButton pRipple
+                      type="button"></button>
             </div>
           </div>
         </ng-template>
@@ -54,9 +69,26 @@
     </div>
   </div>
   <div class="buttons-mobile">
-    <button pButton pRipple type="button" label="Add Ingredient" class="p-button-raised p-button-success add-button-mobile"></button>
-    <button pButton pRipple type="button" label="Search For Recipe" class="p-button-info recipe-button-mobile"></button>
+    <button (click)="openDialog(null,false,$event)" class="p-button-raised p-button-success add-button-mobile" label="Add Ingredient" pButton
+            pRipple type="button"></button>
+    <button class="p-button-info recipe-button-mobile" label="Search For Recipe" pButton pRipple type="button"></button>
   </div>
 </ng-container>
+<app-delete-dialog
+  (response)="closeDeleteDialog($event)"
+  [ingredient]="selectedIngredient"
+  [show]="deleteDialogOpen">
+</app-delete-dialog>
+<app-add-edit-dialog
+  (response)="closeAddEditDialog($event)"
+  [ingredient]="selectedIngredient"
+  [show]="addEditDialogOpen"
+  [isEdit]="isEdit">
+</app-add-edit-dialog>
+
+
+
+
+
 
 

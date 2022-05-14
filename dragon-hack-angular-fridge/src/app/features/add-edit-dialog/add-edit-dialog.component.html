@@ -1,0 +1,29 @@
+<p-dialog
+  [(visible)]="show"
+  [header]="isEdit ? 'Edit ingredient' : 'Add ingredient'"
+  [modal]="true"
+  [style]="{width: '20vw'}"
+  [draggable]="false"
+  [resizable]="false">
+  <div class="p-fluid p-grid p-formgrid overflow" [formGroup]="form">
+    <div class="p-field p-col-12 p-md-4">
+      <label>Ingredient Name</label>
+      <input type="text" pInputText formControlName="name" />
+    </div>
+    <div class="p-field p-col-12 p-md-4">
+      <label>Expiry Date</label>
+      <p-calendar [readonlyInput]="true" [minDate]="minDate" formControlName="expiryDate" ></p-calendar>
+    </div>
+  </div>
+
+  <ng-template pTemplate="footer">
+    <p-button
+      (onClick)="validateForm()"
+      icon="pi pi-check"
+      [label]="isEdit ? 'Apply' :'Add'"
+      class="p-button-text">
+
+    </p-button>
+    <p-button icon="pi pi-times" (click)="response.emit(null)" label="Cancel"></p-button>
+  </ng-template>
+</p-dialog>

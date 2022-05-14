@@ -12,16 +12,16 @@ export class FridgeService {
   constructor(private http: HttpClient) { }
 
   getAll() {
-    return this.http.get(`${this.baseUrl}/list`).pipe(
+    return this.http.get(`${this.baseUrl}/list2`).pipe(
       map((res: any) => {
         return res['data'];
       })
     );
   }
 
-  store(item: Item) {
+  store(item: Item | null) {
     console.log(item);
-    return this.http.post(`${this.baseUrl}/store`, { data: item })
+    return this.http.post(`${this.baseUrl}/store2`, { data: item })
       .pipe(
         map((res: any) => {
           return res['data'];
@@ -29,15 +29,14 @@ export class FridgeService {
       );
   }
 
-  update(item: Item) {
-    return this.http.put(`${this.baseUrl}/update`, { data: item });
+  update(item: Item | null) {
+    return this.http.put(`${this.baseUrl}/update2`, { data: item });
   }
 
   delete(id: any) {
     const params = new HttpParams()
       .set('id', id.toString());
-
-    return this.http.delete(`${this.baseUrl}/delete`, { params: params });
+    return this.http.delete(`${this.baseUrl}/delete2`, { params: params });
   }
 }
 
