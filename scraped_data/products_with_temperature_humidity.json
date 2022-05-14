@@ -1,0 +1,627 @@
+[
+  {
+    "product": "apples",
+    "optimal_temperature": 1.67,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "apricots",
+    "optimal_temperature": -0.28,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "artichokes",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "artichokes, jerusalem",
+    "optimal_temperature": -0.28,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "asparagus",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "avocados, ripe",
+    "optimal_temperature": 5.28,
+    "optimal_humidity": 90
+  },
+  {
+    "product": "avocados, unripe",
+    "optimal_temperature": 8.61,
+    "optimal_humidity": 90
+  },
+  {
+    "product": "bananas, green",
+    "optimal_temperature": 18.89,
+    "optimal_humidity": 90
+  },
+  {
+    "product": "bananas, ripe",
+    "optimal_temperature": 14.44,
+    "optimal_humidity": 90
+  },
+  {
+    "product": "basil",
+    "optimal_temperature": 13.06,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "beans, dry",
+    "optimal_temperature": 7.22,
+    "optimal_humidity": 45
+  },
+  {
+    "product": "beans, green or snap",
+    "optimal_temperature": 5.83,
+    "optimal_humidity": 95
+  },
+  {
+    "product": "beans, sprouts",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "beans. lima",
+    "optimal_temperature": 3.89,
+    "optimal_humidity": 95
+  },
+  {
+    "product": "beets",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "beets, bunched",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 99
+  },
+  {
+    "product": "beets, topped",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 99
+  },
+  {
+    "product": "blackberries",
+    "optimal_temperature": 0.28,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "blueberries",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "bok choy",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "broccoli",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "brussels sprouts",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "bunched greens",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "cabbage, chinese",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "cabbage, early",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 99
+  },
+  {
+    "product": "cabbage, late",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 99
+  },
+  {
+    "product": "cantaloupe",
+    "optimal_temperature": 2.78,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "carrots, bunched",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "carrots, immature",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 99
+  },
+  {
+    "product": "carrots, mature",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 99
+  },
+  {
+    "product": "cauliflower",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 96
+  },
+  {
+    "product": "cauliflower",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "celery",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 99
+  },
+  {
+    "product": "celeriac",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 98
+  },
+  {
+    "product": "chard",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "cherries",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "cherries, sour",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "cherries, sweet",
+    "optimal_temperature": -0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "chicory",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "chicory, witloof",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "chinese pea pods",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "coconuts",
+    "optimal_temperature": 14.17,
+    "optimal_humidity": 82
+  },
+  {
+    "product": "collards",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "corn, sweet",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 96
+  },
+  {
+    "product": "cranberries",
+    "optimal_temperature": 4.44,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "cucumbers",
+    "optimal_temperature": 11.39,
+    "optimal_humidity": 95
+  },
+  {
+    "product": "currants",
+    "optimal_temperature": -0.28,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "eggplant",
+    "optimal_temperature": 10.0,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "elderberries",
+    "optimal_temperature": -0.28,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "endive",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "escarole",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "escarole",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "figs",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "garlic",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 67
+  },
+  {
+    "product": "ginger root",
+    "optimal_temperature": 16.94,
+    "optimal_humidity": 67
+  },
+  {
+    "product": "gooseberries",
+    "optimal_temperature": -0.28,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "grapefruit",
+    "optimal_temperature": 14.17,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "grapes",
+    "optimal_temperature": -0.28,
+    "optimal_humidity": 85
+  },
+  {
+    "product": "green beans",
+    "optimal_temperature": 5.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "green peas",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "greens, leafy",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "guavas",
+    "optimal_temperature": 8.61,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "herbs",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "horseradish",
+    "optimal_temperature": -0.56,
+    "optimal_humidity": 99
+  },
+  {
+    "product": "jicama",
+    "optimal_temperature": 15.56,
+    "optimal_humidity": 67
+  },
+  {
+    "product": "kale",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "kiwi, ripe",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "kiwi, unripe",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "kohlrabi",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 99
+  },
+  {
+    "product": "leeks",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "lemons",
+    "optimal_temperature": 11.94,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "lettuce",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 99
+  },
+  {
+    "product": "limes",
+    "optimal_temperature": 10.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "lychees",
+    "optimal_temperature": 5.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "mangos",
+    "optimal_temperature": 11.39,
+    "optimal_humidity": 90
+  },
+  {
+    "product": "melons, casaba/persian",
+    "optimal_temperature": 11.39,
+    "optimal_humidity": 90
+  },
+  {
+    "product": "melons, crenshaw",
+    "optimal_temperature": 11.39,
+    "optimal_humidity": 90
+  },
+  {
+    "product": "melons, honey dew",
+    "optimal_temperature": 11.39,
+    "optimal_humidity": 90
+  },
+  {
+    "product": "mushrooms",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 95
+  },
+  {
+    "product": "napa",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "nectarines",
+    "optimal_temperature": -0.28,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "okra",
+    "optimal_temperature": 8.61,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "onions",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 70
+  },
+  {
+    "product": "oranges",
+    "optimal_temperature": 5.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "papayas",
+    "optimal_temperature": 11.39,
+    "optimal_humidity": 90
+  },
+  {
+    "product": "parsley",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "parsnips",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 99
+  },
+  {
+    "product": "peaches",
+    "optimal_temperature": -0.28,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "pears",
+    "optimal_temperature": -1.11,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "peas, green",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 96
+  },
+  {
+    "product": "peas, southern",
+    "optimal_temperature": 4.72,
+    "optimal_humidity": 95
+  },
+  {
+    "product": "peppers, hot chili",
+    "optimal_temperature": 5.0,
+    "optimal_humidity": 65
+  },
+  {
+    "product": "peppers, sweet",
+    "optimal_temperature": 10.0,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "persimmons",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "pineapples",
+    "optimal_temperature": 11.39,
+    "optimal_humidity": 90
+  },
+  {
+    "product": "plums",
+    "optimal_temperature": -0.28,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "pomegranates",
+    "optimal_temperature": 7.5,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "potatoes",
+    "optimal_temperature": 8.61,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "precut fruit",
+    "optimal_temperature": 1.11,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "precut vegetables",
+    "optimal_temperature": 1.11,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "prunes",
+    "optimal_temperature": -0.28,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "pumpkins",
+    "optimal_temperature": 11.39,
+    "optimal_humidity": 67
+  },
+  {
+    "product": "quinces",
+    "optimal_temperature": -0.28,
+    "optimal_humidity": 90
+  },
+  {
+    "product": "quinces",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "radishes, spring",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "radishes, winter",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "raspberries",
+    "optimal_temperature": -0.28,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "rhubarb",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "rutabagas",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 99
+  },
+  {
+    "product": "salad mixes",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "salsify",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 96
+  },
+  {
+    "product": "spinach",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "sprouts",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "squashes, summer",
+    "optimal_temperature": 7.5,
+    "optimal_humidity": 95
+  },
+  {
+    "product": "squashes, winter",
+    "optimal_temperature": 18.56,
+    "optimal_humidity": 60
+  },
+  {
+    "product": "strawberries",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "sweet potatoes",
+    "optimal_temperature": 14.17,
+    "optimal_humidity": 87
+  },
+  {
+    "product": "tangerines",
+    "optimal_temperature": 0.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "tangerines",
+    "optimal_temperature": 5.83,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "tomatoes, mature green",
+    "optimal_temperature": 16.94,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "tomatoes, ripe",
+    "optimal_temperature": 16.94,
+    "optimal_humidity": 92
+  },
+  {
+    "product": "turnip greens",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "turnips",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 95
+  },
+  {
+    "product": "watercress",
+    "optimal_temperature": 0.56,
+    "optimal_humidity": 97
+  },
+  {
+    "product": "watermelon",
+    "optimal_temperature": 16.94,
+    "optimal_humidity": 90
+  }
+]

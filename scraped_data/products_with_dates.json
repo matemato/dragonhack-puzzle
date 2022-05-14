@@ -1,0 +1,518 @@
+[
+  {
+    "product": "raw beef, lamb and steak",
+    "cupboard": "not recommended",
+    "fridge": "3 days if wrapped, 5 days if unwrapped",
+    "freezer": "6 months"
+  },
+  {
+    "product": "raw pork roast and lamb chops",
+    "cupboard": "not recommended",
+    "fridge": "3 days if wrapped",
+    "freezer": "4 months"
+  },
+  {
+    "product": "pork sausages and raw pork",
+    "cupboard": "not recommended",
+    "fridge": "1-2 days",
+    "freezer": "1-2 months"
+  },
+  {
+    "product": "roast beef and roast lamb",
+    "cupboard": "not recommended",
+    "fridge": "2-3 days",
+    "freezer": "6 months"
+  },
+  {
+    "product": "cooked steak",
+    "cupboard": "not recommended",
+    "fridge": "2-3 days",
+    "freezer": "6 months"
+  },
+  {
+    "product": "stewed meat and casseroles",
+    "cupboard": "not recommended",
+    "fridge": "2-3 days",
+    "freezer": "2-3 months"
+  },
+  {
+    "product": "beef mince",
+    "cupboard": "not recommended",
+    "fridge": "2-3 days",
+    "freezer": "2-3 months"
+  },
+  {
+    "product": "pre-packaged ham slices",
+    "cupboard": "not recommended",
+    "fridge": "1-2 weeks if unopened, 4 days once opened",
+    "freezer": "1-2 months"
+  },
+  {
+    "product": "sausages and salami",
+    "cupboard": "not recommended",
+    "fridge": "1-2 weeks if unopened, 4 days once opened",
+    "freezer": "1-2 months"
+  },
+  {
+    "product": "raw fish and prawns",
+    "cupboard": "not recommended",
+    "fridge": "1-2 days",
+    "freezer": "3-4 months"
+  },
+  {
+    "product": "cooked fish and prawns",
+    "cupboard": "not recommended",
+    "fridge": "3-4 days",
+    "freezer": "4-6 months"
+  },
+  {
+    "product": "cooked salmon",
+    "cupboard": "not recommended",
+    "fridge": "1-2 weeks",
+    "freezer": "2 months"
+  },
+  {
+    "product": "tinned tuna",
+    "cupboard": "12 months unopened",
+    "fridge": "2 days in fridge once opened",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "crabs and oysters",
+    "cupboard": "not recommended",
+    "fridge": "2 days",
+    "freezer": "6 months"
+  },
+  {
+    "product": "chicken mince and raw poultry",
+    "cupboard": "not recommended",
+    "fridge": "2-3 days",
+    "freezer": "3 months"
+  },
+  {
+    "product": "raw poultry - chicken, duck, turkey and goose",
+    "cupboard": "not recommended",
+    "fridge": "1-2 days",
+    "freezer": "3-6 months"
+  },
+  {
+    "product": "cooked poultry",
+    "cupboard": "not recommended",
+    "fridge": "3-4 days - refrigerate within 2 hours of cooking",
+    "freezer": "3-6 months"
+  },
+  {
+    "product": "cooked chicken nuggets",
+    "cupboard": "not recommended",
+    "fridge": "1-2 days",
+    "freezer": "1-3 months"
+  },
+  {
+    "product": "cooked poultry with stuffing",
+    "cupboard": "not recommended",
+    "fridge": "1-2 days",
+    "freezer": "1 month"
+  },
+  {
+    "product": "meat juice and gravy",
+    "cupboard": "not recommended",
+    "fridge": "1-2 days",
+    "freezer": "2-3 months"
+  },
+  {
+    "product": "tofu and meat substitutes",
+    "cupboard": "not recommended",
+    "fridge": "4-5 days",
+    "freezer": "6-8 weeks"
+  },
+  {
+    "product": "frozen dinners",
+    "cupboard": "not recommended",
+    "fridge": "",
+    "freezer": "3-4 months; keep frozen"
+  },
+  {
+    "product": "milk",
+    "cupboard": "not recommended",
+    "fridge": "1-2 weeks",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "cream",
+    "cupboard": "not recommended",
+    "fridge": "5 days once opened",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "ice-cream",
+    "cupboard": "not recommended",
+    "fridge": "",
+    "freezer": "1-2 months"
+  },
+  {
+    "product": "yoghurt",
+    "cupboard": "not recommended",
+    "fridge": "1 week",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "hard cheeses",
+    "cupboard": "not recommended",
+    "fridge": "1-3 months - varies by type",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "cottage and cream cheeses",
+    "cupboard": "not recommended",
+    "fridge": "1-2 weeks",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "butter",
+    "cupboard": "not recommended",
+    "fridge": "2 months",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "margarine",
+    "cupboard": "not recommended",
+    "fridge": "about 6 months",
+    "freezer": ""
+  },
+  {
+    "product": "condensed milk",
+    "cupboard": "varies, need to check the labelling when sealed",
+    "fridge": "not recommended",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "vegetable oil",
+    "cupboard": "1-3 months opened, 6 months unopened",
+    "fridge": "not recommended",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "salad oil",
+    "cupboard": "2months opened, 3 months unopened",
+    "fridge": "not recommended",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "peanut butter",
+    "cupboard": "2-3 months opened; 6-9 months unopened",
+    "fridge": "6 months opened",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "olive oil",
+    "cupboard": "1-2 weeks",
+    "fridge": "not recommended",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "raw eggs",
+    "cupboard": "not recommended",
+    "fridge": "5-6 weeks",
+    "freezer": "do not freeze"
+  },
+  {
+    "product": "hard-boiled eggs/ cooked eggs",
+    "cupboard": "not recommended",
+    "fridge": "1 week",
+    "freezer": "do not freeze"
+  },
+  {
+    "product": "milk chocolate",
+    "cupboard": "7-8 months from opening, 10 months if unopened",
+    "fridge": "only refrigerate if necessary",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "dark chocolate",
+    "cupboard": "1 year from opening, 2 years if unopened",
+    "fridge": "only refrigerate if necessary",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "cooked rice",
+    "cupboard": "not recommended",
+    "fridge": "5-7 days",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "raw white rice",
+    "cupboard": "12 months",
+    "fridge": "not recommended",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "raw brown rice",
+    "cupboard": "6 months, since they contain more natural oils",
+    "fridge": "not recommended",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "pasta",
+    "cupboard": "6-12 months sealed, 2 months opened",
+    "fridge": "not recommended",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "cereal",
+    "cupboard": "6-12 months sealed, 2 months opened",
+    "fridge": "not recommended",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "bread",
+    "cupboard": "5-7 days",
+    "fridge": "1-2 weeks (try to avoid storing in the fridge)",
+    "freezer": "approximately 3 months"
+  },
+  {
+    "product": "cakes, cookies and muffins",
+    "cupboard": "1 week",
+    "fridge": "1 week",
+    "freezer": "3 months"
+  },
+  {
+    "product": "dried fruits and gravy powder",
+    "cupboard": "approx. 6 months sealed",
+    "fridge": "not recommended",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "canned fruits and vegetables",
+    "cupboard": "12 months + sealed",
+    "fridge": "not recommended",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "pate",
+    "cupboard": "3 weeks sealed, 5-7 days once opened",
+    "fridge": "not recommended",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "mayonnaise/salad dressing",
+    "cupboard": "not recommended",
+    "fridge": "2-3 months",
+    "freezer": "do not freeze"
+  },
+  {
+    "product": "tomato/barbeque sauce",
+    "cupboard": "4-6 months",
+    "fridge": "4-5 months",
+    "freezer": "do not freeze"
+  },
+  {
+    "product": "bottled fruit juice",
+    "cupboard": "",
+    "fridge": "1-2 weeks",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "canned fruit juice",
+    "cupboard": "6 months max",
+    "fridge": "not recommended",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "soft drink",
+    "cupboard": "6 months",
+    "fridge": "6 months",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "baby food",
+    "cupboard": "approx. 6 months unopened",
+    "fridge": "1-2 days once opened",
+    "freezer": "do not freeze"
+  },
+  {
+    "product": "apples",
+    "cupboard": "4 days",
+    "fridge": "1 month",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "avocadoes",
+    "cupboard": "3 days",
+    "fridge": "3 days",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "bananas",
+    "cupboard": "7 days if green, 2-4 days if ripe",
+    "fridge": "do not refrigerate as they will turn black in the cold",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "berries",
+    "cupboard": "not recommended",
+    "fridge": "2-3 days",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "citrus",
+    "cupboard": "1-2 weeks",
+    "fridge": "2 weeks +",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "grapes",
+    "cupboard": "3-5 days",
+    "fridge": "not recommended",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "kiwi fruit",
+    "cupboard": "2-3 days to ripen",
+    "fridge": "1 week once ripe",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "melons",
+    "cupboard": "",
+    "fridge": "1 week",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "peaches",
+    "cupboard": "1 day to ripen",
+    "fridge": "3 days once ripe",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "pears",
+    "cupboard": "2 days to ripen",
+    "fridge": "2 weeks once ripe",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "pineapple",
+    "cupboard": "2 days (whole pineapple)",
+    "fridge": "1 week once cut",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "strawberries",
+    "cupboard": "not recommended",
+    "fridge": "3 days if covered and isolated from other foods",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "watermelon",
+    "cupboard": "2-3 days",
+    "fridge": "6-8 days",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "pre-packaged frozen vegetables",
+    "cupboard": "not recommended",
+    "fridge": "12 months in original packaging",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "canned vegetables",
+    "cupboard": "not recommended",
+    "fridge": "3 days once opened",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "asparagus",
+    "cupboard": "not recommended",
+    "fridge": "3-5 days",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "beans",
+    "cupboard": "not recommended",
+    "fridge": "3-6 days",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "broccoli",
+    "cupboard": "not recommended",
+    "fridge": "5-7 days",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "cabbage",
+    "cupboard": "not recommended",
+    "fridge": "1-2 months",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "carrots",
+    "cupboard": "not recommended",
+    "fridge": "1-3 months",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "capsicum",
+    "cupboard": "not recommended",
+    "fridge": "1-2 weeks",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "cauliflower",
+    "cupboard": "not recommended",
+    "fridge": "1-2 weeks",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "celery",
+    "cupboard": "not recommended",
+    "fridge": "3-4 weeks",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "corn",
+    "cupboard": "not recommended",
+    "fridge": "3 days",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "cucumber",
+    "cupboard": "not recommended",
+    "fridge": "10-12 days",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "eggplants",
+    "cupboard": "not recommended",
+    "fridge": "10-12 days",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "lettuce and mushrooms",
+    "cupboard": "not recommended",
+    "fridge": "10-12 days",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "onions",
+    "cupboard": "1-3 months",
+    "fridge": "1-3 months",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "peas",
+    "cupboard": "not recommended",
+    "fridge": "5-6 days",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "sweet and white potatoes",
+    "cupboard": "2-4 months",
+    "fridge": "do not refrigerate",
+    "freezer": "not recommended"
+  },
+  {
+    "product": "tomatoes",
+    "cupboard": "2-5 weeks to ripen",
+    "fridge": "5-7 days",
+    "freezer": "not recommended"
+  }
+]
