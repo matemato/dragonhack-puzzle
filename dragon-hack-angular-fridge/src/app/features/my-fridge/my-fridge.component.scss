@@ -1,0 +1,16 @@
+.content{
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+
+.closed-fridge::before {
+  content:url('../../../assets/fridge_close.v2-removebg-preview.png');
+}
+
+.open-fridge::before {
+ content: url('../../../assets/fridge_open.v2-removebg-preview.png');
+  height: 700px;
+}
+
+
