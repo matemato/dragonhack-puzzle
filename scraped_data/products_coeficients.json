@@ -1,0 +1,877 @@
+[
+  {
+    "product": "apples",
+    "less_temp_coef": 0.7734564233616229,
+    "high_temp_coef": 0.1833823469341579,
+    "less_hum_coef": 0.0477700993623531,
+    "high_hum_coef": 0.844183178363289
+  },
+  {
+    "product": "apricots",
+    "less_temp_coef": 0.32713607871961403,
+    "high_temp_coef": 0.00026656585347351047,
+    "less_hum_coef": 0.2578734019872443,
+    "high_hum_coef": 0.38807997264209204
+  },
+  {
+    "product": "artichokes",
+    "less_temp_coef": 0.5784585814933173,
+    "high_temp_coef": 0.4761009972021345,
+    "less_hum_coef": 0.8399834320072722,
+    "high_hum_coef": 0.10916437832192227
+  },
+  {
+    "product": "artichokes, jerusalem",
+    "less_temp_coef": 0.9805087201328073,
+    "high_temp_coef": 0.9494409754004479,
+    "less_hum_coef": 0.44017816218305517,
+    "high_hum_coef": 0.033496659869500456
+  },
+  {
+    "product": "asparagus",
+    "less_temp_coef": 0.8086711793894658,
+    "high_temp_coef": 0.09031432532505568,
+    "less_hum_coef": 0.796159614689142,
+    "high_hum_coef": 0.21955162966487907
+  },
+  {
+    "product": "avocados, ripe",
+    "less_temp_coef": 0.9448189661255821,
+    "high_temp_coef": 0.18523524772417477,
+    "less_hum_coef": 0.1863544909731767,
+    "high_hum_coef": 0.2176623018866436
+  },
+  {
+    "product": "avocados, unripe",
+    "less_temp_coef": 0.6402335568969497,
+    "high_temp_coef": 0.26657782511447936,
+    "less_hum_coef": 0.6760702892886479,
+    "high_hum_coef": 0.6138446887180155
+  },
+  {
+    "product": "bananas, green",
+    "less_temp_coef": 0.3359901737141241,
+    "high_temp_coef": 0.5926216068128288,
+    "less_hum_coef": 0.4572359836741765,
+    "high_hum_coef": 0.21469888183636587
+  },
+  {
+    "product": "bananas, ripe",
+    "less_temp_coef": 0.6209501100504545,
+    "high_temp_coef": 0.6696112643492088,
+    "less_hum_coef": 0.04039961351725685,
+    "high_hum_coef": 0.2693109073436807
+  },
+  {
+    "product": "basil",
+    "less_temp_coef": 0.23985608699308714,
+    "high_temp_coef": 0.2543756202875591,
+    "less_hum_coef": 0.37617064637174313,
+    "high_hum_coef": 0.7712446193754933
+  },
+  {
+    "product": "beans, dry",
+    "less_temp_coef": 0.7813195814001208,
+    "high_temp_coef": 0.9887808857242025,
+    "less_hum_coef": 0.22472744543405132,
+    "high_hum_coef": 0.5173208425569309
+  },
+  {
+    "product": "beans, green or snap",
+    "less_temp_coef": 0.6256875397856275,
+    "high_temp_coef": 0.022285623645534325,
+    "less_hum_coef": 0.6256502611901508,
+    "high_hum_coef": 0.06273560734891581
+  },
+  {
+    "product": "beans, sprouts",
+    "less_temp_coef": 0.3474393243285059,
+    "high_temp_coef": 0.6456978791999858,
+    "less_hum_coef": 0.41522229186208015,
+    "high_hum_coef": 0.7088386501783773
+  },
+  {
+    "product": "beans. lima",
+    "less_temp_coef": 0.3438495499481966,
+    "high_temp_coef": 0.309911329176742,
+    "less_hum_coef": 0.8387620827176046,
+    "high_hum_coef": 0.4680534708188606
+  },
+  {
+    "product": "beets",
+    "less_temp_coef": 0.17392069078174,
+    "high_temp_coef": 0.34642888644984116,
+    "less_hum_coef": 0.868004046587234,
+    "high_hum_coef": 0.031034802842175524
+  },
+  {
+    "product": "beets, bunched",
+    "less_temp_coef": 0.6285661938921135,
+    "high_temp_coef": 0.5398764830649642,
+    "less_hum_coef": 0.11746400778105237,
+    "high_hum_coef": 0.9920104547810252
+  },
+  {
+    "product": "beets, topped",
+    "less_temp_coef": 0.5342825407325534,
+    "high_temp_coef": 0.19301108526177813,
+    "less_hum_coef": 0.6158715837657744,
+    "high_hum_coef": 0.2557206802031663
+  },
+  {
+    "product": "blackberries",
+    "less_temp_coef": 0.4518173259560191,
+    "high_temp_coef": 0.059900053819011534,
+    "less_hum_coef": 0.8324718803323046,
+    "high_hum_coef": 0.9736377953231993
+  },
+  {
+    "product": "blueberries",
+    "less_temp_coef": 0.508793501227574,
+    "high_temp_coef": 0.7657594409936365,
+    "less_hum_coef": 0.8101775763486316,
+    "high_hum_coef": 0.7485751119599193
+  },
+  {
+    "product": "bok choy",
+    "less_temp_coef": 0.38153214219252973,
+    "high_temp_coef": 0.3495104220252434,
+    "less_hum_coef": 0.6682239013503197,
+    "high_hum_coef": 0.2264689929123409
+  },
+  {
+    "product": "broccoli",
+    "less_temp_coef": 0.8331303640961751,
+    "high_temp_coef": 0.7195073313105574,
+    "less_hum_coef": 0.9391255284216763,
+    "high_hum_coef": 0.3313326283256267
+  },
+  {
+    "product": "brussels sprouts",
+    "less_temp_coef": 0.5988005512694388,
+    "high_temp_coef": 0.5053897701381794,
+    "less_hum_coef": 0.84634484765746,
+    "high_hum_coef": 0.6970327064829328
+  },
+  {
+    "product": "bunched greens",
+    "less_temp_coef": 0.9600007769623279,
+    "high_temp_coef": 0.9037399646720596,
+    "less_hum_coef": 0.20608909294727196,
+    "high_hum_coef": 0.01005975204919296
+  },
+  {
+    "product": "cabbage, chinese",
+    "less_temp_coef": 0.8404574501200031,
+    "high_temp_coef": 0.6365829026608792,
+    "less_hum_coef": 0.5627163833148082,
+    "high_hum_coef": 0.15687288525764365
+  },
+  {
+    "product": "cabbage, early",
+    "less_temp_coef": 0.5621656081440647,
+    "high_temp_coef": 0.1702721653362389,
+    "less_hum_coef": 0.39133097782858794,
+    "high_hum_coef": 0.9865348963153059
+  },
+  {
+    "product": "cabbage, late",
+    "less_temp_coef": 0.8033959336687061,
+    "high_temp_coef": 0.2324686745420177,
+    "less_hum_coef": 0.44882540631835266,
+    "high_hum_coef": 0.7873873770273451
+  },
+  {
+    "product": "cantaloupe",
+    "less_temp_coef": 0.712564928821232,
+    "high_temp_coef": 0.15959430054815382,
+    "less_hum_coef": 0.8225648475897214,
+    "high_hum_coef": 0.6790353511708836
+  },
+  {
+    "product": "carrots, bunched",
+    "less_temp_coef": 0.40098010459553124,
+    "high_temp_coef": 0.9069932578928604,
+    "less_hum_coef": 0.05467108972539003,
+    "high_hum_coef": 0.07799909758737211
+  },
+  {
+    "product": "carrots, immature",
+    "less_temp_coef": 0.055599009731342686,
+    "high_temp_coef": 0.38036578974411395,
+    "less_hum_coef": 0.26577076317240766,
+    "high_hum_coef": 0.9510410289167045
+  },
+  {
+    "product": "carrots, mature",
+    "less_temp_coef": 0.2905801203781281,
+    "high_temp_coef": 0.6472886943559676,
+    "less_hum_coef": 0.7468967732247481,
+    "high_hum_coef": 0.09566470914663716
+  },
+  {
+    "product": "cauliflower",
+    "less_temp_coef": 0.7552371301661978,
+    "high_temp_coef": 0.9761817711760694,
+    "less_hum_coef": 0.24121910930827606,
+    "high_hum_coef": 0.46912675445392304
+  },
+  {
+    "product": "cauliflower",
+    "less_temp_coef": 0.6244262464432497,
+    "high_temp_coef": 0.15319197977708277,
+    "less_hum_coef": 0.6119957524127141,
+    "high_hum_coef": 0.2912932089664714
+  },
+  {
+    "product": "celery",
+    "less_temp_coef": 0.44226178289299767,
+    "high_temp_coef": 0.21014561965896883,
+    "less_hum_coef": 0.9124233844340641,
+    "high_hum_coef": 0.8506278732229654
+  },
+  {
+    "product": "celeriac",
+    "less_temp_coef": 0.347688882922359,
+    "high_temp_coef": 0.16687636293043528,
+    "less_hum_coef": 0.6700301080891827,
+    "high_hum_coef": 0.4772128409272214
+  },
+  {
+    "product": "chard",
+    "less_temp_coef": 0.14334601849506579,
+    "high_temp_coef": 0.9360222449207444,
+    "less_hum_coef": 0.588326018122319,
+    "high_hum_coef": 0.9420670849160345
+  },
+  {
+    "product": "cherries",
+    "less_temp_coef": 0.25853750079004,
+    "high_temp_coef": 0.055388068675895075,
+    "less_hum_coef": 0.15062473979682534,
+    "high_hum_coef": 0.15760507559524817
+  },
+  {
+    "product": "cherries, sour",
+    "less_temp_coef": 0.45037956696149817,
+    "high_temp_coef": 0.8057039510718087,
+    "less_hum_coef": 0.6060070825708042,
+    "high_hum_coef": 0.8772102824001746
+  },
+  {
+    "product": "cherries, sweet",
+    "less_temp_coef": 0.3997759618881003,
+    "high_temp_coef": 0.8328835927898443,
+    "less_hum_coef": 0.16315102426480965,
+    "high_hum_coef": 0.9373176196522826
+  },
+  {
+    "product": "chicory",
+    "less_temp_coef": 0.6747586187220068,
+    "high_temp_coef": 0.7554393691185592,
+    "less_hum_coef": 0.11865365677404849,
+    "high_hum_coef": 0.6315011216938877
+  },
+  {
+    "product": "chicory, witloof",
+    "less_temp_coef": 0.3591220638434699,
+    "high_temp_coef": 0.0033487710269096693,
+    "less_hum_coef": 0.7592558863814806,
+    "high_hum_coef": 0.7181006466534708
+  },
+  {
+    "product": "chinese pea pods",
+    "less_temp_coef": 0.5553594171069929,
+    "high_temp_coef": 0.11041460637561029,
+    "less_hum_coef": 0.5191787075456228,
+    "high_hum_coef": 0.3480794448543798
+  },
+  {
+    "product": "coconuts",
+    "less_temp_coef": 0.04024907060967675,
+    "high_temp_coef": 0.45821827447073427,
+    "less_hum_coef": 0.04691351165395141,
+    "high_hum_coef": 0.9920012800805554
+  },
+  {
+    "product": "collards",
+    "less_temp_coef": 0.07805365933464858,
+    "high_temp_coef": 0.7729583843643723,
+    "less_hum_coef": 0.1517743924597167,
+    "high_hum_coef": 0.9781201037745179
+  },
+  {
+    "product": "corn, sweet",
+    "less_temp_coef": 0.2537993947069018,
+    "high_temp_coef": 0.2546432099631806,
+    "less_hum_coef": 0.9105579621878634,
+    "high_hum_coef": 0.2986977630550275
+  },
+  {
+    "product": "cranberries",
+    "less_temp_coef": 0.17648887900441934,
+    "high_temp_coef": 0.6157754509182807,
+    "less_hum_coef": 0.6756131741547804,
+    "high_hum_coef": 0.3444130969966309
+  },
+  {
+    "product": "cucumbers",
+    "less_temp_coef": 0.289298491748779,
+    "high_temp_coef": 0.4713654367850427,
+    "less_hum_coef": 0.48978378504412734,
+    "high_hum_coef": 0.17350967710763
+  },
+  {
+    "product": "currants",
+    "less_temp_coef": 0.24307865830618514,
+    "high_temp_coef": 0.40196521124486606,
+    "less_hum_coef": 0.7273863173774113,
+    "high_hum_coef": 0.49812355995958757
+  },
+  {
+    "product": "eggplant",
+    "less_temp_coef": 0.6232422367578557,
+    "high_temp_coef": 0.5427993602811778,
+    "less_hum_coef": 0.5511290538979738,
+    "high_hum_coef": 0.04658060440936651
+  },
+  {
+    "product": "elderberries",
+    "less_temp_coef": 0.6688784751019872,
+    "high_temp_coef": 0.8592951013888077,
+    "less_hum_coef": 0.14178766828168388,
+    "high_hum_coef": 0.3909260081498943
+  },
+  {
+    "product": "endive",
+    "less_temp_coef": 0.5517057642068256,
+    "high_temp_coef": 0.48333040982127673,
+    "less_hum_coef": 0.8172358912665497,
+    "high_hum_coef": 0.7556033582009641
+  },
+  {
+    "product": "escarole",
+    "less_temp_coef": 0.22415948171881717,
+    "high_temp_coef": 0.05254089357964331,
+    "less_hum_coef": 0.8279693354592573,
+    "high_hum_coef": 0.03658513146635778
+  },
+  {
+    "product": "escarole",
+    "less_temp_coef": 0.6901653351316843,
+    "high_temp_coef": 0.2586692780070735,
+    "less_hum_coef": 0.5629022854297685,
+    "high_hum_coef": 0.5471003228091046
+  },
+  {
+    "product": "figs",
+    "less_temp_coef": 0.048055565227409947,
+    "high_temp_coef": 0.5569950826965516,
+    "less_hum_coef": 0.0485590661523847,
+    "high_hum_coef": 0.925948307689627
+  },
+  {
+    "product": "garlic",
+    "less_temp_coef": 0.9965784331535571,
+    "high_temp_coef": 0.6788327771272641,
+    "less_hum_coef": 0.16007422508561753,
+    "high_hum_coef": 0.4392276587523687
+  },
+  {
+    "product": "ginger root",
+    "less_temp_coef": 0.12250518911681507,
+    "high_temp_coef": 0.27467489385794963,
+    "less_hum_coef": 0.6161241219044099,
+    "high_hum_coef": 0.8494484475942057
+  },
+  {
+    "product": "gooseberries",
+    "less_temp_coef": 0.2360777236602899,
+    "high_temp_coef": 0.8179556225373189,
+    "less_hum_coef": 0.7252432540642199,
+    "high_hum_coef": 0.14096730886438946
+  },
+  {
+    "product": "grapefruit",
+    "less_temp_coef": 0.9996593460321693,
+    "high_temp_coef": 0.7443560725764786,
+    "less_hum_coef": 0.8659679853370664,
+    "high_hum_coef": 0.15887286497010733
+  },
+  {
+    "product": "grapes",
+    "less_temp_coef": 0.7780681694405636,
+    "high_temp_coef": 0.03381127187241906,
+    "less_hum_coef": 0.3849395962032486,
+    "high_hum_coef": 0.4896106223561689
+  },
+  {
+    "product": "green beans",
+    "less_temp_coef": 0.45891139967455674,
+    "high_temp_coef": 0.04220422130013313,
+    "less_hum_coef": 0.6746977599293225,
+    "high_hum_coef": 0.8622842473316807
+  },
+  {
+    "product": "green peas",
+    "less_temp_coef": 0.12934843534822915,
+    "high_temp_coef": 0.9974190650931145,
+    "less_hum_coef": 0.26338763549793287,
+    "high_hum_coef": 0.3494703470750292
+  },
+  {
+    "product": "greens, leafy",
+    "less_temp_coef": 0.793667916370877,
+    "high_temp_coef": 0.14503534465524615,
+    "less_hum_coef": 0.8219421470603558,
+    "high_hum_coef": 0.13688290970295203
+  },
+  {
+    "product": "guavas",
+    "less_temp_coef": 0.23475374092620727,
+    "high_temp_coef": 0.339183612274935,
+    "less_hum_coef": 0.20738524120147206,
+    "high_hum_coef": 0.3220221798537396
+  },
+  {
+    "product": "herbs",
+    "less_temp_coef": 0.10930254204086898,
+    "high_temp_coef": 0.14080118652961537,
+    "less_hum_coef": 0.020188622940199186,
+    "high_hum_coef": 0.39292399767869934
+  },
+  {
+    "product": "horseradish",
+    "less_temp_coef": 0.8751242295934432,
+    "high_temp_coef": 0.3905433984692819,
+    "less_hum_coef": 0.9865823324218344,
+    "high_hum_coef": 0.21416954144533518
+  },
+  {
+    "product": "jicama",
+    "less_temp_coef": 0.17224195212691373,
+    "high_temp_coef": 0.0063456783942736905,
+    "less_hum_coef": 0.4770917123688292,
+    "high_hum_coef": 0.6557655827663552
+  },
+  {
+    "product": "kale",
+    "less_temp_coef": 0.3893724922538979,
+    "high_temp_coef": 0.9060263299890834,
+    "less_hum_coef": 0.861807902872544,
+    "high_hum_coef": 0.8173118398117124
+  },
+  {
+    "product": "kiwi, ripe",
+    "less_temp_coef": 0.8319515350106748,
+    "high_temp_coef": 0.9981363057380044,
+    "less_hum_coef": 0.05417470032429872,
+    "high_hum_coef": 0.5424857257282134
+  },
+  {
+    "product": "kiwi, unripe",
+    "less_temp_coef": 0.9209211141728917,
+    "high_temp_coef": 0.6749794860823776,
+    "less_hum_coef": 0.5258824951457196,
+    "high_hum_coef": 0.40645251283744455
+  },
+  {
+    "product": "kohlrabi",
+    "less_temp_coef": 0.8320922208303019,
+    "high_temp_coef": 0.7977157827962199,
+    "less_hum_coef": 0.10957804723749764,
+    "high_hum_coef": 0.21146965060853573
+  },
+  {
+    "product": "leeks",
+    "less_temp_coef": 0.8371808953519972,
+    "high_temp_coef": 0.17870892651670245,
+    "less_hum_coef": 0.8300551539493624,
+    "high_hum_coef": 0.7276531473974639
+  },
+  {
+    "product": "lemons",
+    "less_temp_coef": 0.01703222327077014,
+    "high_temp_coef": 0.7968872250998639,
+    "less_hum_coef": 0.5051323190720601,
+    "high_hum_coef": 0.09798641736108049
+  },
+  {
+    "product": "lettuce",
+    "less_temp_coef": 0.5927843143368801,
+    "high_temp_coef": 0.862858911219349,
+    "less_hum_coef": 0.5617794311053514,
+    "high_hum_coef": 0.008549619195004632
+  },
+  {
+    "product": "limes",
+    "less_temp_coef": 0.5655983594527031,
+    "high_temp_coef": 0.7308029682003663,
+    "less_hum_coef": 0.48233368705652824,
+    "high_hum_coef": 0.6758953899905867
+  },
+  {
+    "product": "lychees",
+    "less_temp_coef": 0.20482975199970976,
+    "high_temp_coef": 0.5564856530109089,
+    "less_hum_coef": 0.5751349973080688,
+    "high_hum_coef": 0.032984605707743864
+  },
+  {
+    "product": "mangos",
+    "less_temp_coef": 0.39190555394304794,
+    "high_temp_coef": 0.011290918079972623,
+    "less_hum_coef": 0.36025786257786196,
+    "high_hum_coef": 0.3866326977298
+  },
+  {
+    "product": "melons, casaba/persian",
+    "less_temp_coef": 0.7911903207488702,
+    "high_temp_coef": 0.651964392973675,
+    "less_hum_coef": 0.004448318765000736,
+    "high_hum_coef": 0.7921650924276035
+  },
+  {
+    "product": "melons, crenshaw",
+    "less_temp_coef": 0.3423073984795665,
+    "high_temp_coef": 0.9052985578556463,
+    "less_hum_coef": 0.9659203087892225,
+    "high_hum_coef": 0.9306358591172209
+  },
+  {
+    "product": "melons, honey dew",
+    "less_temp_coef": 0.20839216709104147,
+    "high_temp_coef": 0.668857941826215,
+    "less_hum_coef": 0.23381238567744145,
+    "high_hum_coef": 0.07351031085419613
+  },
+  {
+    "product": "mushrooms",
+    "less_temp_coef": 0.47679516942935707,
+    "high_temp_coef": 0.7080244756222036,
+    "less_hum_coef": 0.22459251250404966,
+    "high_hum_coef": 0.18527743786191286
+  },
+  {
+    "product": "napa",
+    "less_temp_coef": 0.013775834198190395,
+    "high_temp_coef": 0.5369525952196336,
+    "less_hum_coef": 0.9817292076076858,
+    "high_hum_coef": 0.6357352096915717
+  },
+  {
+    "product": "nectarines",
+    "less_temp_coef": 0.4820428856200515,
+    "high_temp_coef": 0.3296383672170512,
+    "less_hum_coef": 0.4460302512472806,
+    "high_hum_coef": 0.20657826926050527
+  },
+  {
+    "product": "okra",
+    "less_temp_coef": 0.9121552820245817,
+    "high_temp_coef": 0.7424674352721525,
+    "less_hum_coef": 0.01705554158975331,
+    "high_hum_coef": 0.49438996722527806
+  },
+  {
+    "product": "onions",
+    "less_temp_coef": 0.5851088449793674,
+    "high_temp_coef": 0.6767394786868751,
+    "less_hum_coef": 0.8214582671913524,
+    "high_hum_coef": 0.35171394986172777
+  },
+  {
+    "product": "oranges",
+    "less_temp_coef": 0.6774762615799158,
+    "high_temp_coef": 0.9015588650152191,
+    "less_hum_coef": 0.45906018787004044,
+    "high_hum_coef": 0.10261811076253624
+  },
+  {
+    "product": "papayas",
+    "less_temp_coef": 0.15635562490883748,
+    "high_temp_coef": 0.9793275928103375,
+    "less_hum_coef": 0.05102325464613122,
+    "high_hum_coef": 0.15886907582643306
+  },
+  {
+    "product": "parsley",
+    "less_temp_coef": 0.3572379777957977,
+    "high_temp_coef": 0.7813748647924645,
+    "less_hum_coef": 0.30468210205270807,
+    "high_hum_coef": 0.7362723780499317
+  },
+  {
+    "product": "parsnips",
+    "less_temp_coef": 0.8538442943480656,
+    "high_temp_coef": 0.03270566201709668,
+    "less_hum_coef": 0.1633807107302756,
+    "high_hum_coef": 0.2078592883632805
+  },
+  {
+    "product": "peaches",
+    "less_temp_coef": 0.9826587676332001,
+    "high_temp_coef": 0.4492812897298424,
+    "less_hum_coef": 0.1622829973374803,
+    "high_hum_coef": 0.965523164787247
+  },
+  {
+    "product": "pears",
+    "less_temp_coef": 0.9458048658357273,
+    "high_temp_coef": 0.0383955225451067,
+    "less_hum_coef": 0.6580778927723785,
+    "high_hum_coef": 0.057746947299036955
+  },
+  {
+    "product": "peas, green",
+    "less_temp_coef": 0.5232702575686816,
+    "high_temp_coef": 0.9382697350449434,
+    "less_hum_coef": 0.832317753750977,
+    "high_hum_coef": 0.4401542633707014
+  },
+  {
+    "product": "peas, southern",
+    "less_temp_coef": 0.07175604404272595,
+    "high_temp_coef": 0.7420309143779278,
+    "less_hum_coef": 0.5262953784007928,
+    "high_hum_coef": 0.5285308690078283
+  },
+  {
+    "product": "peppers, hot chili",
+    "less_temp_coef": 0.7227051691309788,
+    "high_temp_coef": 0.6857871422116782,
+    "less_hum_coef": 0.533818324211979,
+    "high_hum_coef": 0.4130600237965777
+  },
+  {
+    "product": "peppers, sweet",
+    "less_temp_coef": 0.2191203632801363,
+    "high_temp_coef": 0.8283106466772954,
+    "less_hum_coef": 0.7013041060715914,
+    "high_hum_coef": 0.6471961615931713
+  },
+  {
+    "product": "persimmons",
+    "less_temp_coef": 0.07669953348046099,
+    "high_temp_coef": 0.5506492108270512,
+    "less_hum_coef": 0.16725138946580265,
+    "high_hum_coef": 0.8593095300876162
+  },
+  {
+    "product": "pineapples",
+    "less_temp_coef": 0.4001508779243861,
+    "high_temp_coef": 0.45809793277879296,
+    "less_hum_coef": 0.25472558668878964,
+    "high_hum_coef": 0.5413494158950056
+  },
+  {
+    "product": "plums",
+    "less_temp_coef": 0.4770442963502124,
+    "high_temp_coef": 0.6318213982918517,
+    "less_hum_coef": 0.06622981190048483,
+    "high_hum_coef": 0.8355222667071469
+  },
+  {
+    "product": "pomegranates",
+    "less_temp_coef": 0.4215710460418671,
+    "high_temp_coef": 0.4477831590884961,
+    "less_hum_coef": 0.9648870223725228,
+    "high_hum_coef": 0.6906178722001519
+  },
+  {
+    "product": "potatoes",
+    "less_temp_coef": 0.23060628197882604,
+    "high_temp_coef": 0.4163779750520211,
+    "less_hum_coef": 0.0011709156861551273,
+    "high_hum_coef": 0.7372888771091978
+  },
+  {
+    "product": "precut fruit",
+    "less_temp_coef": 0.8238346976870581,
+    "high_temp_coef": 0.09439385021348723,
+    "less_hum_coef": 0.10161116329093689,
+    "high_hum_coef": 0.2697261161963387
+  },
+  {
+    "product": "precut vegetables",
+    "less_temp_coef": 0.7669453030723157,
+    "high_temp_coef": 0.8817254603142463,
+    "less_hum_coef": 0.48101934570192606,
+    "high_hum_coef": 0.48133439604928596
+  },
+  {
+    "product": "prunes",
+    "less_temp_coef": 0.9237684609319988,
+    "high_temp_coef": 0.33335230091914636,
+    "less_hum_coef": 0.6425990232907358,
+    "high_hum_coef": 0.2117060689010416
+  },
+  {
+    "product": "pumpkins",
+    "less_temp_coef": 0.4425546290342701,
+    "high_temp_coef": 0.16529535348584667,
+    "less_hum_coef": 0.34787551328357,
+    "high_hum_coef": 0.8057256058914275
+  },
+  {
+    "product": "quinces",
+    "less_temp_coef": 0.6331590635407143,
+    "high_temp_coef": 0.540491741828816,
+    "less_hum_coef": 0.8124300628711771,
+    "high_hum_coef": 0.7479387453911048
+  },
+  {
+    "product": "quinces",
+    "less_temp_coef": 0.39678859173871917,
+    "high_temp_coef": 0.9234208025048488,
+    "less_hum_coef": 0.15283921891977292,
+    "high_hum_coef": 0.28683906951462323
+  },
+  {
+    "product": "radishes, spring",
+    "less_temp_coef": 0.24243749861456498,
+    "high_temp_coef": 0.7976530928200823,
+    "less_hum_coef": 0.25781083709640906,
+    "high_hum_coef": 0.7186230458591985
+  },
+  {
+    "product": "radishes, winter",
+    "less_temp_coef": 0.8351776703043694,
+    "high_temp_coef": 0.8253999463917061,
+    "less_hum_coef": 0.5942302649908557,
+    "high_hum_coef": 0.09127165691410166
+  },
+  {
+    "product": "raspberries",
+    "less_temp_coef": 0.7081545063738099,
+    "high_temp_coef": 0.4142867385560266,
+    "less_hum_coef": 0.021870140232588264,
+    "high_hum_coef": 0.09793493757500471
+  },
+  {
+    "product": "rhubarb",
+    "less_temp_coef": 0.17428301953630998,
+    "high_temp_coef": 0.3034459750501929,
+    "less_hum_coef": 0.16546414494572237,
+    "high_hum_coef": 0.9596935953223802
+  },
+  {
+    "product": "rutabagas",
+    "less_temp_coef": 0.5711251927952147,
+    "high_temp_coef": 0.21185650481440965,
+    "less_hum_coef": 0.4532580636278347,
+    "high_hum_coef": 0.35173328578601426
+  },
+  {
+    "product": "salad mixes",
+    "less_temp_coef": 0.203604534321016,
+    "high_temp_coef": 0.5605807414842092,
+    "less_hum_coef": 0.5081770337127489,
+    "high_hum_coef": 0.3024966166589744
+  },
+  {
+    "product": "salsify",
+    "less_temp_coef": 0.6350442668964416,
+    "high_temp_coef": 0.6389647207892063,
+    "less_hum_coef": 0.29608720861482163,
+    "high_hum_coef": 0.728716330035872
+  },
+  {
+    "product": "spinach",
+    "less_temp_coef": 0.09956823935566395,
+    "high_temp_coef": 0.6000057583352251,
+    "less_hum_coef": 0.3780411495161007,
+    "high_hum_coef": 0.6197166233426857
+  },
+  {
+    "product": "sprouts",
+    "less_temp_coef": 0.08650640409899224,
+    "high_temp_coef": 0.11382417726283911,
+    "less_hum_coef": 0.4285045113960516,
+    "high_hum_coef": 0.4362684128680817
+  },
+  {
+    "product": "squashes, summer",
+    "less_temp_coef": 0.042173063029091185,
+    "high_temp_coef": 0.987898934086117,
+    "less_hum_coef": 0.31408695072008597,
+    "high_hum_coef": 0.46638756107026347
+  },
+  {
+    "product": "squashes, winter",
+    "less_temp_coef": 0.6731638690283896,
+    "high_temp_coef": 0.420925977751868,
+    "less_hum_coef": 0.035324498382831915,
+    "high_hum_coef": 0.660871947368783
+  },
+  {
+    "product": "strawberries",
+    "less_temp_coef": 0.7876968527239525,
+    "high_temp_coef": 0.4151604724573634,
+    "less_hum_coef": 0.160720492728893,
+    "high_hum_coef": 0.8988148390311439
+  },
+  {
+    "product": "sweet potatoes",
+    "less_temp_coef": 0.4303204010723227,
+    "high_temp_coef": 0.3541452523185087,
+    "less_hum_coef": 0.5428114250953163,
+    "high_hum_coef": 0.3770845208769631
+  },
+  {
+    "product": "tangerines",
+    "less_temp_coef": 0.35606562260095675,
+    "high_temp_coef": 0.43566901920988466,
+    "less_hum_coef": 0.7314082783128782,
+    "high_hum_coef": 0.8042897958899204
+  },
+  {
+    "product": "tangerines",
+    "less_temp_coef": 0.26959328327165244,
+    "high_temp_coef": 0.6810856992898653,
+    "less_hum_coef": 0.2564398521356436,
+    "high_hum_coef": 0.6980417577463237
+  },
+  {
+    "product": "tomatoes, mature green",
+    "less_temp_coef": 0.2331830321834728,
+    "high_temp_coef": 0.3740557700419034,
+    "less_hum_coef": 0.8040186965500331,
+    "high_hum_coef": 0.4503080768327672
+  },
+  {
+    "product": "tomatoes, ripe",
+    "less_temp_coef": 0.726549789296286,
+    "high_temp_coef": 0.8121369740847771,
+    "less_hum_coef": 0.12489733230496114,
+    "high_hum_coef": 0.4786072823917913
+  },
+  {
+    "product": "turnip greens",
+    "less_temp_coef": 0.5126011174130038,
+    "high_temp_coef": 0.05237399950489907,
+    "less_hum_coef": 0.2926645176303938,
+    "high_hum_coef": 0.4124829904118883
+  },
+  {
+    "product": "turnips",
+    "less_temp_coef": 0.1330839964027637,
+    "high_temp_coef": 0.37884672121909146,
+    "less_hum_coef": 0.32644244545022827,
+    "high_hum_coef": 0.8783667235771353
+  },
+  {
+    "product": "watercress",
+    "less_temp_coef": 0.8776617038573907,
+    "high_temp_coef": 0.6881842682314405,
+    "less_hum_coef": 0.8802414135661195,
+    "high_hum_coef": 0.36375080815326577
+  },
+  {
+    "product": "watermelon",
+    "less_temp_coef": 0.2294365999537592,
+    "high_temp_coef": 0.0998900393139257,
+    "less_hum_coef": 0.8532779898446343,
+    "high_hum_coef": 0.7638080406010673
+  }
+]
