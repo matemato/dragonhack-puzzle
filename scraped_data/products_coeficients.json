@@ -1,15 +1,15 @@
 [
   {
     "product": "apples",
-    "less_temp_coef": 0.7734564233616229,
+    "less_temp_coef": 0.07734564233616229,
     "high_temp_coef": 0.1833823469341579,
     "less_hum_coef": 0.0477700993623531,
     "high_hum_coef": 0.844183178363289
   },
   {
     "product": "apricots",
-    "less_temp_coef": 0.32713607871961403,
-    "high_temp_coef": 0.00026656585347351047,
+    "less_temp_coef": 0.12713607871961403,
+    "high_temp_coef": 0.26656585347351047,
     "less_hum_coef": 0.2578734019872443,
     "high_hum_coef": 0.38807997264209204
   },
@@ -21,13 +21,6 @@
     "high_hum_coef": 0.10916437832192227
   },
   {
-    "product": "artichokes, jerusalem",
-    "less_temp_coef": 0.9805087201328073,
-    "high_temp_coef": 0.9494409754004479,
-    "less_hum_coef": 0.44017816218305517,
-    "high_hum_coef": 0.033496659869500456
-  },
-  {
     "product": "asparagus",
     "less_temp_coef": 0.8086711793894658,
     "high_temp_coef": 0.09031432532505568,
@@ -36,29 +29,15 @@
   },
   {
     "product": "avocados, ripe",
-    "less_temp_coef": 0.9448189661255821,
-    "high_temp_coef": 0.18523524772417477,
+    "less_temp_coef": 0.3448189661255821,
+    "high_temp_coef": 0.98523524772417477,
     "less_hum_coef": 0.1863544909731767,
-    "high_hum_coef": 0.2176623018866436
-  },
-  {
-    "product": "avocados, unripe",
-    "less_temp_coef": 0.6402335568969497,
-    "high_temp_coef": 0.26657782511447936,
-    "less_hum_coef": 0.6760702892886479,
-    "high_hum_coef": 0.6138446887180155
-  },
-  {
-    "product": "bananas, green",
-    "less_temp_coef": 0.3359901737141241,
-    "high_temp_coef": 0.5926216068128288,
-    "less_hum_coef": 0.4572359836741765,
-    "high_hum_coef": 0.21469888183636587
+    "high_hum_coef": 0.6176623018866436
   },
   {
     "product": "bananas, ripe",
     "less_temp_coef": 0.6209501100504545,
-    "high_temp_coef": 0.6696112643492088,
+    "high_temp_coef": 0.8696112643492088,
     "less_hum_coef": 0.04039961351725685,
     "high_hum_coef": 0.2693109073436807
   },
