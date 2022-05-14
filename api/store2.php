@@ -13,14 +13,14 @@ if(isset($postdata) && !empty($postdata))
   $request = json_decode(json_encode($request), true);
   #var_dump($request["data"]["experationDate"]); exit();
   // Validate.
-  if(trim($request["data"]["experationDate"]) === '' || $request["data"]["name"] === '')
+  if(trim($request["data"]["EXPERATIONDATE"]) === '' || $request["data"]["NAME"] === '')
   {
     return http_response_code(400);
   }
 	
   // Sanitize.
-  $date = htmlspecialchars($request["data"]["experationDate"]);
-  $name = htmlspecialchars($request["data"]["name"]);  
+  $date = htmlspecialchars($request["data"]["EXPERATIONDATE"]);
+  $name = htmlspecialchars($request["data"]["NAME"]);  
 
   // Get id by name
   $id='';

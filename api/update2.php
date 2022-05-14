@@ -13,15 +13,15 @@ if(isset($postdata) && !empty($postdata))
   $request = json_decode(json_encode($request), true);
   #var_dump($request["data"]["experationDate"]); exit();
   // Validate.
-  if(trim($request["data"]["experationDate"]) === '' || $request["data"]["name"] === '' || !is_numeric($request["data"]["id"]))
+  if(trim($request["data"]["EXPERATIONDATE"]) === '' || $request["data"]["NAME"] === '' || !is_numeric($request["data"]["ITEM_ID"]))
   {
     return http_response_code(400);
   }
 	
   // Sanitize.
-  $id    = htmlspecialchars($request["data"]["id"]);
-  $date = htmlspecialchars($request["data"]["experationDate"]);
-  $name = htmlspecialchars($request["data"]["name"]);  
+  $id    = htmlspecialchars($request["data"]["ITEM_ID"]);
+  $date = htmlspecialchars($request["data"]["EXPERATIONDATE"]);
+  $name = htmlspecialchars($request["data"]["NAME"]);  
 
     try{
         // store    
@@ -32,9 +32,9 @@ if(isset($postdata) && !empty($postdata))
         $statement->execute(); 
         
         $item = [
-            'experationDate' => $date,
-            'name' => $name,
-            'id'    => $id
+            'EXPERATIONDATE' => $date,
+            'NAME' => $name,
+            'ITEM_ID'    => $id
           ];
         echo json_encode(['data'=>$item]);
     }catch (Exception $e) {
