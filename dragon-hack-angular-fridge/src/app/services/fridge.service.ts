@@ -35,7 +35,7 @@ export class FridgeService {
 
   delete(id: any) {
     const params = new HttpParams()
-      .set('id', id.toString());
+      .set('ITEM_ID', id.toString());
     return this.http.delete(`${this.baseUrl}/delete2`, { params: params });
   }
 }

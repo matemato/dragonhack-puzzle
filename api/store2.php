@@ -31,9 +31,12 @@ if(isset($postdata) && !empty($postdata))
     $result = $statement->fetchAll();
     if (isset($result[0]['ITEM_ID']))
       $id = $result[0]['ITEM_ID'];
-    else
+    else{
       echo 'Item with that name does not exsist';
       http_response_code(422);
+      exit();
+    }
+      
 
   }catch(Exception $e){
     echo 'Caught exception: ',  $e->getMessage(), "\n";
@@ -49,9 +52,9 @@ if(isset($postdata) && !empty($postdata))
     $statement->execute(); 
     
     $item = [
-        'experationDate' => $date,
-        'name' => $name,
-        'id'    => $id
+        'EXPERATIONDATE' => $date,
+        'NAME' => $name,
+        'ITEM_ID'    => $id
       ];
     echo json_encode(['data'=>$item]);
   }catch (Exception $e) {
