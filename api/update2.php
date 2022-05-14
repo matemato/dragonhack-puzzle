@@ -25,7 +25,7 @@ if(isset($postdata) && !empty($postdata))
 
     try{
         // store    
-        $statement = $db->prepare("UPDATE `items` SET experationDate=:eDate, name=:iName WHERE id=:id");            
+        $statement = $db->prepare("UPDATE `items` SET EXPERATIONDATE=:eDate, NAME=:iName WHERE ITEM_ID=:id");            
         $statement -> bindParam(":id", $id, PDO::PARAM_INT);       
         $statement -> bindParam(":eDate", $date, PDO::PARAM_STR);            
         $statement -> bindParam(":iName", $name, PDO::PARAM_STR);                

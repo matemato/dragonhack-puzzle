@@ -22,24 +22,42 @@ if(isset($postdata) && !empty($postdata))
   $date = htmlspecialchars($request["data"]["experationDate"]);
   $name = htmlspecialchars($request["data"]["name"]);  
 
-    try{
-        // store    
-        $statement = $db->prepare("INSERT INTO `items`(`experationDate`,`name`)
-            VALUES (:eDate, :iName)");        
-        $statement -> bindParam(":eDate", $date, PDO::PARAM_STR);            
-        $statement -> bindParam(":iName", $name, PDO::PARAM_STR);                
-        $statement->execute(); 
-        
-        $item = [
-            'experationDate' => $date,
-            'name' => $name,
-            'id'    => $db->lastInsertId()
-          ];
-        echo json_encode(['data'=>$item]);
-    }catch (Exception $e) {
-        echo 'Caught exception: ',  $e->getMessage(), "\n";
-        http_response_code(422);
-    }
+  // Get id by name
+  $id='';
+  try{
+    $statement = $db->prepare("SELECT ITEM_ID FROM `items` WHERE NAME=:sampleName");
+    $statement -> bindParam(":sampleName", $name, PDO::PARAM_STR);
+    $statement->execute();
+    $result = $statement->fetchAll();
+    if (isset($result[0]['ITEM_ID']))
+      $id = $result[0]['ITEM_ID'];
+    else
+      echo 'Item with that name does not exsist';
+      http_response_code(422);
+
+  }catch(Exception $e){
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+    http_response_code(422);
+  }
+
+  try{
+    // store    
+    $statement = $db->prepare("UPDATE `items` SET EXPERATIONDATE=:eDate, NAME=:iName, INFRIDGE=1 WHERE ITEM_ID=:id");            
+    $statement -> bindParam(":id", $id, PDO::PARAM_INT);       
+    $statement -> bindParam(":eDate", $date, PDO::PARAM_STR);            
+    $statement -> bindParam(":iName", $name, PDO::PARAM_STR);                
+    $statement->execute(); 
+    
+    $item = [
+        'experationDate' => $date,
+        'name' => $name,
+        'id'    => $id
+      ];
+    echo json_encode(['data'=>$item]);
+  }catch (Exception $e) {
+      echo 'Caught exception: ',  $e->getMessage(), "\n";
+      http_response_code(422);
+  }
 }
 ?>
 

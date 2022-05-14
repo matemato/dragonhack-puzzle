@@ -13,14 +13,13 @@ if(!$id)
 }
 
 try{
-    $statement = $db->prepare("DELETE FROM items WHERE id = :id LIMIT 1");        
-    $statement->bindParam(":id", $id, PDO::PARAM_INT);
-    $statement->execute(); 
-    http_response_code(204);   
+  // delete    
+  $statement = $db->prepare("UPDATE `items` SET INFRIDGE=0 WHERE id=:id");            
+  $statement -> bindParam(":id", $id, PDO::PARAM_INT);                  
+  $statement->execute(); 
 }catch (Exception $e) {
     echo 'Caught exception: ',  $e->getMessage(), "\n";
     http_response_code(422);
 }
-
 ?>
 
