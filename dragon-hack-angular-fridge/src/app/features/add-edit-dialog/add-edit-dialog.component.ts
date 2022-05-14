@@ -48,14 +48,14 @@ export class AddEditDialogComponent implements OnInit {
   validateForm() {
     this.form.markAllAsTouched();
     if(this.form.valid) {
-      const newItem = new Item(this.form.value.expiryDate, this.form.value.name, this.ingredient ? this.ingredient.id : null)
+      const newItem = new Item(this.form.value.expiryDate, this.form.value.name, this.ingredient ? this.ingredient.ITEM_ID : null)
       this.response.emit(newItem)
       this.form.reset();
     }
   }
 
   private setData() {
-    this.form.controls['name'].setValue(this.ingredient.name);
-    this.form.controls['expiryDate'].setValue(new Date(this.ingredient.experationDate));
+    this.form.controls['name'].setValue(this.ingredient.NAME);
+    this.form.controls['expiryDate'].setValue(new Date(this.ingredient.EXPERATIONDATE));
   }
 }

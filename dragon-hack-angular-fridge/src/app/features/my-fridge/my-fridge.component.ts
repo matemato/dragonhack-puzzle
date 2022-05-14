@@ -28,11 +28,6 @@ export class MyFridgeComponent implements OnInit {
   addEditDialogOpen = false;
   isEdit = false;
 
-  item: Item = {
-    experationDate: new Date(),
-    name: '',
-    id: null
-  }
 
   constructor(private fridgeService: FridgeService) {
   }

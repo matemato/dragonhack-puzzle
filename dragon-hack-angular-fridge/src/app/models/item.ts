@@ -1,11 +1,11 @@
 export class Item {
-  experationDate: Date;
-  name: string;
-  id: number | null;
+  EXPERATIONDATE: Date;
+  NAME: string;
+  ITEM_ID: number | null;
 
   constructor(experationDate: Date, name: string, id: number | null) {
-    this.experationDate = experationDate;
-    this.name = name;
-    this.id = id;
+    this.EXPERATIONDATE = experationDate;
+    this.NAME = name;
+    this.ITEM_ID = id;
   }
 }

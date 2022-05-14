@@ -12,7 +12,7 @@
           <div class="ingredient-item">
             <div>
               <div><b>{{country.name}}</b></div>
-              <div>{{country.experationDate.toLocaleDateString()}}</div>
+              <div>{{country.experationDate | date: 'dd.MM.yyyy }}</div>
             </div>
             <div class="item-buttons">
               <button class="p-button-help"
@@ -60,7 +60,7 @@
             </div>
             <div class="item-buttons">
               <button class="p-button-help" icon="pi pi-search" pButton pRipple type="button"></button>
-              <button (click)="openDialog(item,true,$event)" class="p-button-danger" icon="pi pi-times" pButton pRipple
+              <button (click)="openDialog(country,true,$event)" class="p-button-danger" icon="pi pi-times" pButton pRipple
                       type="button"></button>
             </div>
           </div>
