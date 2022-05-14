@@ -1,16 +1,100 @@
+//PC
+
 .content{
   display: flex;
   justify-content: center;
   height: 600px;
+  background-image: url("../../../assets/fridge_open.v2-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
 }
 
-.closed-fridge::before {
-  content:url('../../../assets/fridge_close.v2-removebg-preview.png');
+.content-before{
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  background-image: url("../../../assets/fridge_close.v2-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
+}
+.ingredients{
+  margin-top: 110px;
+  margin-right: 40px;
+  margin-left: 20px;
+  width: 320px;
+  height: 405px;
+  border-radius: 20px;
+  overflow: auto;
+}
+.buttons{
+  margin-top: 110px;
+  width: 320px;
+  height: 405px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 }
 
-.open-fridge::before {
- content: url('../../../assets/fridge_open.v2-removebg-preview.png');
-  height: 700px;
+.ingredient-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
+
+.add-button {
+  margin-top: 140px;
+  margin-bottom: 85px;
+}
+
+.recipe-button {
+
+}
+
+.item-buttons {
+  button {
+    margin-left: 10px;
+  }
+}
+
+//MOBILE
+
+.content-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  background-image: url("../../../assets/closed_mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.ingredients-mobile {
+  margin-top: 110px;
+  width: 330px;
+  height: 410px;
+  border-radius: 20px;
+  overflow: auto;
+}
+
+.buttons-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-button-mobile {
+  margin-bottom: 30px;
+}
+
+.recipe-button-mobile {
+
+}
+
+
 
 

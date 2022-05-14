@@ -1,6 +1,62 @@
-<div class="content">
-  <img *ngIf="this.showClosedFridge" src="../../../assets/fridge_close.v2-removebg-preview.png" (click)="toggleFridge()" alt="'nedela">
-  <img *ngIf="this.showOpenFridge"  src="../../../assets/fridge_open.v2-removebg-preview.png" class = "open-fridge" alt="'nedela'">
-</div>
+<ng-container *ngIf="!isMobile">
+  <div class="content-before" (click)="toggleFridge()" *ngIf="showClosedFridge"></div>
+  <div class="content" *ngIf="showOpenFridge">
+    <div class="ingredients">
+      <p-listbox [options]="ingredients"
+                 [(ngModel)]="selectedCountries"
+                 [checkbox]="true"
+                 [multiple]="true"
+                 optionLabel="name"
+                 [listStyle]="{'height':'405px'}">
+        <ng-template let-country pTemplate="item">
+          <div class="ingredient-item">
+            <div>
+              <div><b>{{country.name}}</b></div>
+              <div>{{country.experationDate.toLocaleDateString()}}</div>
+            </div>
+            <div class="item-buttons">
+              <button pButton pRipple type="button" icon="pi pi-search"  class="p-button-help"></button>
+              <button pButton pRipple type="button" icon="pi pi-times" class="p-button-danger"></button>
+            </div>
+          </div>
+        </ng-template>
+      </p-listbox>
+    </div>
+    <div class="buttons">
+      <button pButton pRipple type="button" label="Add Ingredient" class="p-button-raised p-button-success add-button"></button>
+      <button pButton pRipple type="button" label="Search For Recipe" class="p-button-info recipe-button"></button>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="this.isMobile">
+  <div class="content-mobile">
+    <div class="ingredients-mobile">
+      <p-listbox [options]="ingredients"
+                 [(ngModel)]="selectedCountries"
+                 [checkbox]="true"
+                 [multiple]="true"
+                 optionLabel="name"
+                 [listStyle]="{'height':'405px'}">
+        <ng-template let-country pTemplate="item">
+          <div class="ingredient-item">
+            <div>
+              <div><b>{{country.name}}</b></div>
+              <div>{{country.experationDate.toLocaleDateString()}}</div>
+            </div>
+            <div class="item-buttons">
+              <button pButton pRipple type="button" icon="pi pi-search"  class="p-button-help"></button>
+              <button pButton pRipple type="button" icon="pi pi-times" class="p-button-danger"></button>
+            </div>
+          </div>
+        </ng-template>
+      </p-listbox>
+    </div>
+  </div>
+  <div class="buttons-mobile">
+    <button pButton pRipple type="button" label="Add Ingredient" class="p-button-raised p-button-success add-button-mobile"></button>
+    <button pButton pRipple type="button" label="Search For Recipe" class="p-button-info recipe-button-mobile"></button>
+  </div>
+</ng-container>
 
 
