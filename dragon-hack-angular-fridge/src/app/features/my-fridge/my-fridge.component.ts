@@ -56,7 +56,7 @@ export class MyFridgeComponent implements OnInit {
 
   closeDeleteDialog(event: any) {
     if(event) {
-      this.fridgeService.delete(this.selectedIngredient.id).subscribe(()=> {
+      this.fridgeService.delete(this.selectedIngredient.ITEM_ID).subscribe(()=> {
         this.getAllItems();
       })
     }
@@ -65,7 +65,10 @@ export class MyFridgeComponent implements OnInit {
   }
 
   getAllItems() {
-    this.fridgeService.getAll().subscribe(res => this.ingredients = res)
+    this.fridgeService.getAll().subscribe(res => {
+      this.ingredients = res;
+      console.log(this.ingredients)
+    })
   }
 
   closeAddEditDialog($event: Item | null) {

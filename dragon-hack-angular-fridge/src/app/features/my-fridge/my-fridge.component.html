@@ -11,8 +11,8 @@
         <ng-template let-country pTemplate="item">
           <div class="ingredient-item">
             <div>
-              <div><b>{{country.name}}</b></div>
-              <div>{{country.experationDate | date: 'dd.MM.yyyy }}</div>
+              <div><b>{{country.NAME}}</b></div>
+              <div>{{country.EXPERATIONDATE}}</div>
             </div>
             <div class="item-buttons">
               <button class="p-button-help"
@@ -55,8 +55,8 @@
         <ng-template let-country pTemplate="item">
           <div class="ingredient-item">
             <div>
-              <div><b>{{country.name}}</b></div>
-              <div>{{country.experationDate.toLocaleDateString()}}</div>
+              <div><b>{{country.NAME}}</b></div>
+              <div>{{country.EXPERATIONDATE}</div>
             </div>
             <div class="item-buttons">
               <button class="p-button-help" icon="pi pi-search" pButton pRipple type="button"></button>
@@ -91,6 +91,6 @@
 
 
 
-<app-file-upload></app-file-upload>
+<!--<app-file-upload></app-file-upload>-->
 
 
