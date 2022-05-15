@@ -19,9 +19,9 @@ try{
             // array_push($tmpA, '
             // You have saved: '.$tmp.' with succesfully using '.$r["NAME_USED"].' before expiration.
             // ');
-            array_push($tmpA, (object)array($tmp, $r["NAME_USED"]));
+            array_push($tmpA, array($tmp, $r["NAME_USED"]));
         }
-        array_push($tmpA, (object)array($sum, "Final sum"));
+        array_push($tmpA, array($sum, "Final sum"));
     }else{
         echo'
         You have not used any items before expiration date, yet. Try better.
