@@ -59,6 +59,10 @@ export class FridgeService {
     return this.http.get(`${this.baseUrl}/datesOfUse`)
   }
 
+  getStats() {
+    return this.http.get(`${this.baseUrl}/displayStatistics`,{responseType: 'text' })
+  }
+
 }
 
 

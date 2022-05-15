@@ -25,6 +25,7 @@ import { DatePipe } from '@angular/common';
 import {FileUploadModule} from "primeng/fileupload";
 import { RecipesComponent } from './features/recipes/recipes.component';
 import {CardModule} from "primeng/card";
+import { StatisticsComponent } from './features/statistics/statistics.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import {CardModule} from "primeng/card";
     AddEditDialogComponent,
     FileUploadComponent,
     RecipesComponent,
+    StatisticsComponent,
   ],
   imports: [
     BrowserModule,
