@@ -32,15 +32,10 @@ if(isset($postdata) && !empty($postdata))
     if (isset($result[0]['ITEM_ID']))
       $id = $result[0]['ITEM_ID'];
     else{
-      // echo 'Item with that name does not exsist';
-      // http_response_code(422);
-      // exit();
-      $statement = $db->prepare("INSERT INTO `items` (`NAME`, `EXPERATIONDATE`)
-      VALUES (:iName, :iDate)"); 
-      $statement -> bindParam(":iDate", $date, PDO::PARAM_STR);            
-      $statement -> bindParam(":iName", $name, PDO::PARAM_STR); 
-      $statement->execute();
-      exit(); 
+      echo 'Item with that name does not exsist';
+      http_response_code(422);
+      exit();
+      
     }
       
 
