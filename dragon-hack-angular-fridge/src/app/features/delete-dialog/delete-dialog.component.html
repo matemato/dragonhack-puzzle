@@ -1,5 +1,6 @@
 
 <p-dialog
+  (close)="response.emit(false)"
   [(visible)]="show"
   header="Delete Dialog"
   [modal]="true"

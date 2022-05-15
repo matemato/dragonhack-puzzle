@@ -10,11 +10,19 @@
       <label>Ingredient Name</label>
       <input type="text" pInputText formControlName="name"/>
     </div>
-    <div class="p-field p-col-12 p-md-4">
+    <div class="p-field p-col-12 p-md-4 toggle-button">
+      <p-selectButton [options]="stateOptions" formControlName="isFruit" optionLabel="name"
+                      optionValue="value" (onChange)="onFruitChange()"></p-selectButton>
+    </div>
+    <div class="p-field p-col-12 p-md-4" *ngIf="!isFruit">
       <label>Expiry Date</label>
       <p-calendar [readonlyInput]="true" [minDate]="minDate" formControlName="expiryDate" ></p-calendar>
     </div>
+    <div class="p-field p-col-12 p-md-4" >
+      <p-message *ngIf="isError" severity="warn" text="Both fields required" styleClass="p-mr-2"></p-message>
+    </div>
   </div>
+
 
   <ng-template pTemplate="footer">
     <p-button
@@ -24,6 +32,6 @@
       class="p-button-text">
 
     </p-button>
-    <p-button icon="pi pi-times" (click)="response.emit(null)" label="Cancel"></p-button>
+    <p-button icon="pi pi-times" (click)="onCancel()" label="Cancel"></p-button>
   </ng-template>
 </p-dialog>

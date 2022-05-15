@@ -12,7 +12,7 @@
           <div class="ingredient-item">
             <div>
               <div><b>{{country.NAME}}</b></div>
-              <div>{{country.EXPERATIONDATE}}</div>
+              <div>{{country.EXPERATIONDATE  | date : 'dd.MM.yyyy'}}</div>
             </div>
             <div class="item-buttons">
               <button class="p-button-help"
@@ -39,6 +39,8 @@
               type="button">
       </button>
       <button class="p-button-info recipe-button" label="Search For Recipe" pButton pRipple type="button"></button>
+      <input type="file" id="files" (click)="onChange($event)" class="receipt-button">
+        <button class="p-button-help receipt-button" label="Upload receipt" pButton pRipple type="button" (click)="onUpload()" ></button>
     </div>
   </div>
 </ng-container>
@@ -56,7 +58,7 @@
           <div class="ingredient-item">
             <div>
               <div><b>{{country.NAME}}</b></div>
-              <div>{{country.EXPERATIONDATE}</div>
+              <div>{{country.EXPERATIONDATE  | date : 'dd.MM.yyyy'}}</div>
             </div>
             <div class="item-buttons">
               <button class="p-button-help" icon="pi pi-search" pButton pRipple type="button"></button>

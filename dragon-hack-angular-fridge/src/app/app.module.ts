@@ -18,7 +18,11 @@ import { AddEditDialogComponent } from './features/add-edit-dialog/add-edit-dial
 import {CalendarModule} from "primeng/calendar";
 import {InputTextModule} from "primeng/inputtext";
 import { FileUploadComponent } from './file-upload/file-upload.component';
-
+import {MessageModule} from "primeng/message";
+import {ToggleButtonModule} from "primeng/togglebutton";
+import {SelectButtonModule} from "primeng/selectbutton";
+import { DatePipe } from '@angular/common';
+import {FileUploadModule} from "primeng/fileupload";
 
 @NgModule({
   declarations: [
@@ -26,7 +30,7 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
     MyFridgeComponent,
     DeleteDialogComponent,
     AddEditDialogComponent,
-    FileUploadComponent
+    FileUploadComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,9 +46,13 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
     DialogModule,
     ReactiveFormsModule,
     CalendarModule,
-    InputTextModule
+    InputTextModule,
+    MessageModule,
+    ToggleButtonModule,
+    SelectButtonModule,
+    FileUploadModule,
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

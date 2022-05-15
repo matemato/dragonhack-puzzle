@@ -2,6 +2,7 @@ import {Component, HostListener, OnInit} from '@angular/core';
 import {FridgeService} from "../../services/fridge.service";
 import {Item} from "../../models/item";
 import {ListboxModule} from 'primeng/listbox';
+import {FileUploadService} from "../../file-upload.service";
 
 @Component({
   selector: 'app-my-fridge',
@@ -29,7 +30,7 @@ export class MyFridgeComponent implements OnInit {
   isEdit = false;
 
 
-  constructor(private fridgeService: FridgeService) {
+  constructor(private fridgeService: FridgeService,private fileUploadService: FileUploadService) {
   }
 
   ngOnInit(): void {
@@ -48,9 +49,8 @@ export class MyFridgeComponent implements OnInit {
 
   openDialog(item: Item | null, openDelete: boolean,$event: Event,isEdit = false) {
     $event.stopPropagation()
-    this.selectedIngredient = item;
-    console.log(this.selectedIngredient)
     this.isEdit = isEdit;
+    this.selectedIngredient = item;
     openDelete ? this.deleteDialogOpen = true : this.addEditDialogOpen = true;
   }
 
@@ -72,15 +72,66 @@ export class MyFridgeComponent implements OnInit {
   }
 
   closeAddEditDialog($event: Item | null) {
-    if (!this.isEdit) {
-      this.fridgeService.store($event).subscribe(()=>{
-        this.getAllItems()
-      })
-    } else {
-      this.fridgeService.update($event).subscribe(()=>{
-        this.getAllItems()
-      })
+    if($event) {
+      if (!this.isEdit) {
+        this.fridgeService.store($event).subscribe(()=>{
+          this.getAllItems()
+        })
+      } else {
+        this.fridgeService.update($event).subscribe(()=>{
+          this.getAllItems()
+        })
+      }
     }
     this.addEditDialogOpen = false;
+  }
+
+
+  file!: File;
+  onChange($event: any) {
+    setTimeout(()=>{
+      this.file = $event.target.files[0];
+      console.log(this.file)
+    },2000)
+
+  }
+  loading: boolean = false; // Flag variable
+  shortLink: string = "";
+  receiptText = "";
+
+  onUpload() {
+    this.loading = !this.loading;
+    this.fileUploadService.upload(this.file).subscribe(
+      (event: any) => {
+        if (typeof (event) === 'object') {
+          // Short link via api response
+          this.shortLink = event.link;
+          this.loading = false; // Flag variable
+          this.getText()
+        }
+      }
+    );
+  }
+
+  getText(){
+    var myHeaders = new Headers();
+    myHeaders.append("apikey", "cRcbOtWZbzOwSyj933D7B8sScfM4pa4Z");
+    var raw = this.file;
+    var requestOptions: RequestInit = {
+      method: 'POST',
+      redirect: 'follow',
+      headers: myHeaders,
+      body: raw
+    };
+    fetch("https://api.apilayer.com/image_to_text/upload", requestOptions)
+      .then(response => response.text())
+      .then(result => {
+        this.receiptText = result;
+        this.receiptText = JSON.parse(this.receiptText)['all_text'].toLowerCase()
+        this.fridgeService.textToIngredients(this.receiptText).subscribe((res: any) => console.log(res))
+
+      })
+      .catch(error => console.log('error', error));
+
   }
 }

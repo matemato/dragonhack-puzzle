@@ -2,7 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FileUploadService } from '../file-upload.service';
 import {HttpClient} from '@angular/common/http';
-  
+
 @Component({
     selector: 'app-file-upload',
     templateUrl: './file-upload.component.html',
@@ -10,28 +10,28 @@ import {HttpClient} from '@angular/common/http';
 })
 export class FileUploadComponent implements OnInit {
     postId: any;
-    // Variable to store shortLink from api response
+    // Variable to store shortLink from api respons
     receiptText = "";
     shortLink: string = "";
     loading: boolean = false; // Flag variable
     file!: File; // Variable to store file
-  
-    // Inject service 
+
+    // Inject service
     constructor(private fileUploadService: FileUploadService,
         private http:HttpClient) { }
-  
+
     ngOnInit(): void {
         this.getIngredients();
         this.getIngredients2();
         console.log(typeof {"name":"John"})
         console.log(typeof JSON.parse('{"name":"John", "age":30, "city":"New York"}'))
     }
-  
+
     // On file Select
     onChange(event: any) {
         this.file = event.target.files[0];
     }
-  
+
     // OnClick of button Upload
     onUpload() {
         this.loading = !this.loading;
@@ -39,11 +39,11 @@ export class FileUploadComponent implements OnInit {
         this.fileUploadService.upload(this.file).subscribe(
             (event: any) => {
                 if (typeof (event) === 'object') {
-  
+
                     // Short link via api response
                     this.shortLink = event.link;
-  
-                    this.loading = false; // Flag variable 
+
+                    this.loading = false; // Flag variable
                 }
             }
         );
@@ -69,11 +69,11 @@ export class FileUploadComponent implements OnInit {
                 console.log(typeof this.receiptText)
                 this.receiptText = JSON.parse(this.receiptText)['all_text'].toLowerCase()
                 console.log(this.receiptText)
-                
+
                 this.getIngredients()
             })
             .catch(error => console.log('error', error));
-        
+
     }
 
     getIngredients() {
@@ -93,7 +93,7 @@ export class FileUploadComponent implements OnInit {
             .then(response => response.text())
             .then(result => console.log(result))
             .catch(error => console.log('error', error))
-    } 
+    }
 
     getIngredients2() {
         this.http.post<any>('https://api.spoonacular.com/food/detect', { 'apiKey': '052e5ae09e394586bf452a5a09bddafd', 'text': 'banana je very cool', 'Content-Type': 'application/x-www-form-urlencoded' }).subscribe(data => {

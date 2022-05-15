@@ -46,18 +46,26 @@
 
 .add-button {
   margin-top: 140px;
-  margin-bottom: 85px;
+  margin-bottom: 15px;
 }
 
 .recipe-button {
+  margin-bottom: 30px;
+}
 
+.receipt-button {
+  margin-top: 20px;
 }
 
 .item-buttons {
+  display: flex;
   button {
     margin-left: 10px;
   }
 }
+
+
+
 
 //MOBILE
 

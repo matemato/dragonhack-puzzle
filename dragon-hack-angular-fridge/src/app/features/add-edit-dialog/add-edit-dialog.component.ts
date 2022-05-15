@@ -14,7 +14,14 @@ export class AddEditDialogComponent implements OnInit {
   @Input() ingredient! : Item ;
   @Output()response = new EventEmitter<Item | null>();
 
-  minDate = new Date()
+  minDate = new Date();
+  isError = false;
+  isFruit = false;
+
+  stateOptions = [
+    { name: 'Other food', value: false },
+    { name: 'Fruit or vegetable', value: true },
+  ];
 
   constructor() {
   }
@@ -34,15 +41,19 @@ export class AddEditDialogComponent implements OnInit {
   }
 
 
+
   public form: FormGroup = new FormGroup({
     name: new FormControl('', {validators: [Validators.required]}),
     expiryDate: new FormControl('', Validators.required),
+    isFruit: new FormControl(false),
+
   });
 
 
 
 
   ngOnInit(): void {
+    this.form.valueChanges.subscribe(() => this.isError = false)
   }
 
   validateForm() {
@@ -51,11 +62,22 @@ export class AddEditDialogComponent implements OnInit {
       const newItem = new Item(this.form.value.expiryDate, this.form.value.name, this.ingredient ? this.ingredient.ITEM_ID : null)
       this.response.emit(newItem)
       this.form.reset();
+    } else {
+      this.isError=true;
     }
   }
 
   private setData() {
     this.form.controls['name'].setValue(this.ingredient.NAME);
     this.form.controls['expiryDate'].setValue(new Date(this.ingredient.EXPERATIONDATE));
+  }
+
+  onCancel() {
+    this.form.reset()
+    this.response.emit(null);
+  }
+
+  onFruitChange() {
+    this.isFruit = this.form.value['isFruit']
   }
 }

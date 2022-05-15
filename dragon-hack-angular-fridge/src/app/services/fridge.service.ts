@@ -3,6 +3,7 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import {environment} from "../../environments/environment";
 import { Item } from "../models/item"
+import {Observable} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -37,6 +38,10 @@ export class FridgeService {
     const params = new HttpParams()
       .set('ITEM_ID', id.toString());
     return this.http.delete(`${this.baseUrl}/delete2`, { params: params, responseType: 'text' });
+  }
+
+  textToIngredients(text: string) : Observable<Object>{
+    return this.http.post(`${this.baseUrl}/textToIngredients`, text)
   }
 }
 
