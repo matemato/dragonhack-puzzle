@@ -11,8 +11,12 @@ if(isset($postdata) && !empty($postdata))
     return;
 }
 
-function search_recipes_by_ingredients($ingredients){
-    $url = "https://api.spoonacular.com/recipes/findByIngredients?apiKey=f17755694ab8485db5676b880d16dae9&ingredients=";
+$apiKey = "f17755694ab8485db5676b880d16dae9";
+
+function search_recipes_by_ingredients($ingredients, $apiKey){
+    $url = "https://api.spoonacular.com/recipes/findByIngredients?apiKey=";
+    $url = $ulr.=$apiKey;
+    $url = $url.="f17755694ab8485db5676b880d16dae9&ingredients=";
     $url = $url .= $ingredients;
     #var_dump($url);
     // Initialize a CURL session.

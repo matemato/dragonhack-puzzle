@@ -38,7 +38,8 @@ function detect_food_in_text($text, $apiKey){
  
     $result = curl_exec($ch);
  
-    echo $result;
+    json_encode(['data'=> $result]);
+    #echo $result;
 }
 
 detect_food_in_text($request["text"],$apiKey);
