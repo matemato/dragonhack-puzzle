@@ -26,7 +26,7 @@ try{
         You have not used any items before expiration date, yet. Try better.
         ';
     } 
-    print_r ($tmpA);   
+   echo json_encode($tmpA);   
     
 }catch (Exception $e) {
     echo 'Caught exception: ',  $e->getMessage(), "\n";
