@@ -1,2 +1,16 @@
 <div class="content">
+  <div>
+    <p-card *ngFor="let recipe of recipes" [header]="recipe.title" [style]="{'width': '25rem', 'margin-bottom': '2em', 'max-height':'300px'}">
+
+      <div class="lower-half">
+      <img [src]="recipe.image" alt="Recept" style="width: 150px; border-radius: 20px">
+        <div>
+          <p><b>Missing Ingredients</b> {{recipe.missedIngredientCount}}</p>
+          <p><b>Used Ingredients</b> {{recipe.usedIngredientCount}}</p>
+        </div>
+
+      </div>
+
+    </p-card>
+  </div>
 </div>

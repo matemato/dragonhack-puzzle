@@ -54,6 +54,7 @@ export class FridgeService {
   getRecipes(text: string) {
     return this.http.post(`${this.baseUrl}/recipesByIngredients`, text)
   }
+
 }
 
 

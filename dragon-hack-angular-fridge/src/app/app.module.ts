@@ -24,6 +24,7 @@ import {SelectButtonModule} from "primeng/selectbutton";
 import { DatePipe } from '@angular/common';
 import {FileUploadModule} from "primeng/fileupload";
 import { RecipesComponent } from './features/recipes/recipes.component';
+import {CardModule} from "primeng/card";
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { RecipesComponent } from './features/recipes/recipes.component';
     ToggleButtonModule,
     SelectButtonModule,
     FileUploadModule,
+    CardModule,
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent]

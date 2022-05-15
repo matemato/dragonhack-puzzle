@@ -138,6 +138,5 @@ export class MyFridgeComponent implements OnInit {
   getRecipes() {
     this.fridgeService.getRecipes('cheddar,cream cheese').subscribe(res => console.log(res))
     this.fridgeService.switchTab('My Recipes');
-
   }
 }
