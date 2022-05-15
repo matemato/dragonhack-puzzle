@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, EventEmitter, HostListener, OnInit, Output} from '@angular/core';
 import {FridgeService} from "../../services/fridge.service";
 import {Item} from "../../models/item";
 import {ListboxModule} from 'primeng/listbox';
@@ -115,7 +115,7 @@ export class MyFridgeComponent implements OnInit {
 
   getText(){
     var myHeaders = new Headers();
-    myHeaders.append("apikey", "m18Jj8lHLegVANDKKCdxzPZIvXpeP48l");
+    myHeaders.append("apikey", "cRcbOtWZbzOwSyj933D7B8sScfM4pa4Z");
     var raw = this.file;
     var requestOptions: RequestInit = {
       method: 'POST',
@@ -128,10 +128,16 @@ export class MyFridgeComponent implements OnInit {
       .then(result => {
         this.receiptText = result;
         this.receiptText = JSON.parse(this.receiptText)['all_text'].toLowerCase()
+        console.log(this.receiptText)
         this.fridgeService.textToIngredients(this.receiptText).subscribe((res: any) => console.log(res))
-
       })
       .catch(error => console.log('error', error));
+
+  }
+
+  getRecipes() {
+    this.fridgeService.getRecipes('cheddar,cream cheese').subscribe(res => console.log(res))
+    this.fridgeService.switchTab('My Recipes');
 
   }
 }

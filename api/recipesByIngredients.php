@@ -1,7 +1,7 @@
 <?php
 // Get the posted data.
 $postdata = file_get_contents("php://input");
-
+var_dump($postdata);
 if(isset($postdata) && !empty($postdata))
 {
   // Extract the data.
@@ -11,13 +11,14 @@ if(isset($postdata) && !empty($postdata))
     return;
 }
 
-$apiKey = "f17755694ab8485db5676b880d16dae9";
+$apiKey = "7480326a15e243ccbb99b3c3283323ca";
 
 function search_recipes_by_ingredients($ingredients, $apiKey){
     $url = "https://api.spoonacular.com/recipes/findByIngredients?apiKey=";
-    $url = $ulr.=$apiKey;
+    $url = $url.=$apiKey;
     $url = $url.="f17755694ab8485db5676b880d16dae9&ingredients=";
     $url = $url .= $ingredients;
+    var_dump($url);
     #var_dump($url);
     // Initialize a CURL session.
     $ch = curl_init();
@@ -32,7 +33,6 @@ function search_recipes_by_ingredients($ingredients, $apiKey){
     echo $result;
 }
 
-#search_recipes_by_ingredients($request["text"]);
-search_recipes_by_ingredients("banana");
+search_recipes_by_ingredients($postdata, $apiKey);
 
 ?>

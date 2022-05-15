@@ -3,12 +3,19 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import {environment} from "../../environments/environment";
 import { Item } from "../models/item"
-import {Observable} from "rxjs";
+import {BehaviorSubject, Observable} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
 export class FridgeService {
+  currentTab = new BehaviorSubject('My Fridge');
+
+  switchTab(newTab: string){
+    this.currentTab.next(newTab);
+  }
+
+
   baseUrl = environment.baseUrl;
   constructor(private http: HttpClient) { }
 
@@ -42,6 +49,10 @@ export class FridgeService {
 
   textToIngredients(text: string) : Observable<Object>{
     return this.http.post(`${this.baseUrl}/textToIngredients`, text)
+  }
+
+  getRecipes(text: string) {
+    return this.http.post(`${this.baseUrl}/recipesByIngredients`, text)
   }
 }
 
