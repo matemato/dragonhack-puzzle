@@ -8,17 +8,17 @@ if(isset($postdata) && !empty($postdata))
   // Extract the data.
   $request = json_decode($postdata);
   $request = json_decode(json_encode($request), true);
-}else{
-    return;
 }
 
 
-$apiKey = "7480326a15e243ccbb99b3c3283323ca";
+$apiKey = "f17755694ab8485db5676b880d16dae9";
 
-function detect_food_in_text($text){
+function detect_food_in_text($text, $apiKey){
     $url = "https://api.spoonacular.com/food/detect?apiKey=";
-    $url = $url.=$apiKey.="&text=";
+    $url = $url.=$apiKey;
+    $url = $url.="&text=";
     $url = $url.=$text;
+    #var_dump($url);
    
     // Initialize a CURL session.
     $ch = curl_init();
@@ -41,4 +41,5 @@ function detect_food_in_text($text){
     echo $result;
 }
 
-detect_food_in_text($request["text"]);
+detect_food_in_text($request["text"],$apiKey);
+#detect_food_in_text("Banana, orange, chocolade", $apiKey);
