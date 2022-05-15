@@ -23,6 +23,7 @@ import {ToggleButtonModule} from "primeng/togglebutton";
 import {SelectButtonModule} from "primeng/selectbutton";
 import { DatePipe } from '@angular/common';
 import {FileUploadModule} from "primeng/fileupload";
+import { RecipesComponent } from './features/recipes/recipes.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import {FileUploadModule} from "primeng/fileupload";
     DeleteDialogComponent,
     AddEditDialogComponent,
     FileUploadComponent,
+    RecipesComponent,
   ],
   imports: [
     BrowserModule,

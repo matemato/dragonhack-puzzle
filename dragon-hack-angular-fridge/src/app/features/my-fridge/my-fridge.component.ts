@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, EventEmitter, HostListener, OnInit, Output} from '@angular/core';
 import {FridgeService} from "../../services/fridge.service";
 import {Item} from "../../models/item";
 import {ListboxModule} from 'primeng/listbox';
@@ -132,6 +132,12 @@ export class MyFridgeComponent implements OnInit {
         this.fridgeService.textToIngredients(this.receiptText).subscribe((res: any) => console.log(res))
       })
       .catch(error => console.log('error', error));
+
+  }
+
+  getRecipes() {
+    this.fridgeService.getRecipes('cheddar,cream cheese').subscribe(res => console.log(res))
+    this.fridgeService.switchTab('My Recipes');
 
   }
 }

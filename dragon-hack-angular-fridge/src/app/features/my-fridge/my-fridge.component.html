@@ -38,7 +38,7 @@
               pButton pRipple
               type="button">
       </button>
-      <button class="p-button-info recipe-button" label="Search For Recipe" pButton pRipple type="button"></button>
+      <button (click)="getRecipes()" class="p-button-info recipe-button" label="Search For Recipe" pButton pRipple type="button" [disabled]="this.selectedIngredients.length === 0"></button>
       <input type="file" id="files" (click)="onChange($event)" class="receipt-button">
       <button [disabled]="file === undefined" class="p-button-help receipt-button" label="Upload receipt" pButton pRipple type="button" (click)="onUpload()"></button>
     </div>

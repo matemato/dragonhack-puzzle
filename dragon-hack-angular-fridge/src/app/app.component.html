@@ -1,5 +1,5 @@
 <div class="tab">
-  <p-tabMenu [model]="items" [activeItem]="items[0]"></p-tabMenu>
+  <p-tabMenu #tab [model]="items" [activeItem]="activeItem" (click)="tabChange(tab)"></p-tabMenu>
 </div>
 <router-outlet></router-outlet>
 
