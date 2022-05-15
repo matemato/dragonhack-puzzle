@@ -11,12 +11,12 @@ if(isset($postdata) && !empty($postdata))
     return;
 }
 
-$apiKey = "7480326a15e243ccbb99b3c3283323ca";
+$apiKey = "1215dfe2d3a54e72ae07d0e88f7f5f7c";
 
 function search_recipes_by_ingredients($ingredients, $apiKey){
     $url = "https://api.spoonacular.com/recipes/findByIngredients?apiKey=";
     $url = $url.=$apiKey;
-    $url = $url.="f17755694ab8485db5676b880d16dae9&ingredients=";
+    $url = $url.="&ingredients=";
     $url = $url .= $ingredients;
     var_dump($url);
     #var_dump($url);
