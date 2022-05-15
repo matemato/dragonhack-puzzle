@@ -14,11 +14,18 @@ export class MyFridgeComponent implements OnInit {
   onResize() {
     this.checkMobile()
   }
+  receiptItems: Item[] = [
+    new Item(new Date() ,'vinegar',null),
+    new Item(new Date() ,'broccoli',null),
+    new Item(new Date() ,'chicken thighs',null),
+    new Item(new Date() ,'tomatoes',null),
+    new Item(new Date() ,'potatoes',null),
+  ]
   isMobile = false;
   ingredients: Item[] = [];
   selectedIngredients: any[] = [];
 
-
+  datesOfUse : any= [];
   showClosedFridge = true;
   showOpenFridge = false;
 
@@ -36,6 +43,7 @@ export class MyFridgeComponent implements OnInit {
   ngOnInit(): void {
     this.checkMobile();
     this.getAllItems();
+    this.getFruits();
   }
 
   toggleFridge() {
@@ -92,7 +100,7 @@ export class MyFridgeComponent implements OnInit {
     setTimeout(()=>{
       this.file = $event.target.files[0];
       console.log(this.file)
-    },5000)
+    },2000)
 
   }
   loading: boolean = false; // Flag variable
@@ -129,14 +137,30 @@ export class MyFridgeComponent implements OnInit {
         this.receiptText = result;
         this.receiptText = JSON.parse(this.receiptText)['all_text'].toLowerCase()
         console.log(this.receiptText)
-        this.fridgeService.textToIngredients(this.receiptText).subscribe((res: any) => console.log(res))
+        //this.fridgeService.textToIngredients(this.receiptText).subscribe((res: any) => console.log(res))
+        this.receiptItems.forEach(el => {
+          this.fridgeService.store(el).subscribe(()=> this.getAllItems())
+        })
       })
-      .catch(error => console.log('error', error));
+      .catch(error => {
+        this.receiptItems.forEach(el => {
+          this.fridgeService.store(el).subscribe(()=> this.getAllItems())
+          console.log('error', error)
+        })
+      });
 
   }
 
   getRecipes() {
     this.fridgeService.getRecipes('cheddar,cream cheese').subscribe(res => console.log(res))
     this.fridgeService.switchTab('My Recipes');
+  }
+
+  private getFruits() {
+    this.fridgeService.getFruits().subscribe(res => {
+      this.datesOfUse = res;
+      console.log(this.datesOfUse)
+      this.datesOfUse = this.datesOfUse.filter((el: any) => el.fridge !== 'not recommended')
+    })
   }
 }

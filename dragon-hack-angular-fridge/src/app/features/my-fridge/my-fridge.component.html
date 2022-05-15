@@ -38,9 +38,16 @@
               pButton pRipple
               type="button">
       </button>
-      <button class="p-button-info recipe-button" label="Search For Recipe" pButton pRipple type="button" (click)="getRecipes()" [disabled]="selectedIngredients.length == 0"></button>
+      <button
+        class="p-button-info recipe-button"
+        label="Search For Recipe"
+        pButton
+        pRipple
+        type="button"
+        (click)="getRecipes()"
+        [disabled]="selectedIngredients.length == 0"></button>
       <input type="file" id="files" (click)="onChange($event)" class="receipt-button hide">
-      <input type="button" value="Upload receipt image" class="p-button-warning upload" onclick="document.getElementById('files').click();" pButton pRipple/>
+      <input type="button" value="Upload receipt image" class="p-button-warning upload" onclick="document.getElementById('files').click();" pButton pRipple style="font-weight: 700"/>
       <button [disabled]="file === undefined" class="p-button-help receipt-button" label="Get ingridients" pButton pRipple type="button" (click)="onUpload()"></button>
     </div>
   </div>
@@ -86,7 +93,8 @@
   (response)="closeAddEditDialog($event)"
   [ingredient]="selectedIngredient"
   [show]="addEditDialogOpen"
-  [isEdit]="isEdit">
+  [isEdit]="isEdit"
+  [dates]="datesOfUse">
 </app-add-edit-dialog>
 
 

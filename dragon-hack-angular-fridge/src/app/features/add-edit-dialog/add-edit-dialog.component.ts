@@ -11,17 +11,25 @@ export class AddEditDialogComponent implements OnInit {
 
   @Input() show = false;
   @Input() isEdit = false;
-  @Input() ingredient! : Item ;
-  @Output()response = new EventEmitter<Item | null>();
+  @Input() dates: any = [];
+  @Input() ingredient!: Item;
+  @Output() response = new EventEmitter<Item | null>();
+
 
   minDate = new Date();
   isError = false;
-  isFruit = false;
+  recommendedFridgeLife = undefined;
 
   stateOptions = [
-    { name: 'Other food', value: false },
-    { name: 'Fruit or vegetable', value: true },
+    {name: 'Other food', value: false},
+    {name: 'Fruit or vegetable', value: true},
   ];
+  public form: FormGroup = new FormGroup({
+    name: new FormControl('', {validators: [Validators.required]}),
+    expiryDate: new FormControl('', Validators.required),
+    isFruit: new FormControl(false),
+
+  });
 
   constructor() {
   }
@@ -31,45 +39,34 @@ export class AddEditDialogComponent implements OnInit {
       if (changes.hasOwnProperty(propName)) {
         switch (propName) {
           case 'ingredient': {
-           if(this.isEdit && this.ingredient) {
-             this.setData();
-           }
+            if (this.isEdit && this.ingredient) {
+              this.setData();
+            }
           }
         }
       }
     }
   }
 
-
-
-  public form: FormGroup = new FormGroup({
-    name: new FormControl('', {validators: [Validators.required]}),
-    expiryDate: new FormControl('', Validators.required),
-    isFruit: new FormControl(false),
-
-  });
-
-
-
-
   ngOnInit(): void {
-    this.form.valueChanges.subscribe(() => this.isError = false)
+    this.form.valueChanges.subscribe((change) => {
+      this.isError = false;
+      const product = this.dates.find((el: { product: string | any[]; }) => el.product == change.name)
+      product ?
+        this.recommendedFridgeLife = product.fridge :
+        this.recommendedFridgeLife = undefined;
+    })
   }
 
   validateForm() {
     this.form.markAllAsTouched();
-    if(this.form.valid) {
+    if (this.form.valid) {
       const newItem = new Item(this.form.value.expiryDate, this.form.value.name, this.ingredient ? this.ingredient.ITEM_ID : null)
       this.response.emit(newItem)
       this.form.reset();
     } else {
-      this.isError=true;
+      this.isError = true;
     }
-  }
-
-  private setData() {
-    this.form.controls['name'].setValue(this.ingredient.NAME);
-    this.form.controls['expiryDate'].setValue(new Date(this.ingredient.EXPERATIONDATE));
   }
 
   onCancel() {
@@ -77,7 +74,9 @@ export class AddEditDialogComponent implements OnInit {
     this.response.emit(null);
   }
 
-  onFruitChange() {
-    this.isFruit = this.form.value['isFruit']
+  private setData() {
+    this.form.controls['name'].setValue(this.ingredient.NAME);
+    this.form.controls['expiryDate'].setValue(new Date(this.ingredient.EXPERATIONDATE));
   }
+
 }
