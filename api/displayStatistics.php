@@ -3,17 +3,19 @@ require_once "connect2.php";
 
 $db = Connect2::getInstance();
 try{
-    $statement = $db->prepare("SELECT * NAME FROM statistika");
-    $res = $statement->execute()->fetchAll();
+    $statement = $db->prepare("SELECT * FROM statistika");
+    $statement->execute();
+    $res = $statement->fetchAll();    
     if(isset($res[0]) && !empty($res[0])){
-        foreach($res as $r){
+        foreach($res as $r){   
+            $tmp = $r["UNITS"]*$r["PRICE_USED"];       
             echo '
-            <div>You have saved: '.$r["units"]*$r["price_used"].' with succesfully using '$r["NAME_USED"]' before expiration.</div>
+            You have saved: '.$tmp.' with succesfully using '.$r["NAME_USED"].' before expiration.
             ';
         }
     }else{
         echo'
-        <div>You have not used any items before expiration date, yet. Try better.</div>
+        You have not used any items before expiration date, yet. Try better.
         ';
     }    
     
