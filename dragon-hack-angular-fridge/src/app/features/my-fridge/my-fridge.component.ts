@@ -37,7 +37,7 @@ export class MyFridgeComponent implements OnInit {
   isEdit = false;
 
   optimalTemperature: number = 0;
-  currentTemperature: number = 2;
+  currentTemperature: number = 24;
 
 
   constructor(private fridgeService: FridgeService,private fileUploadService: FileUploadService) {
