@@ -17,7 +17,6 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { AddEditDialogComponent } from './features/add-edit-dialog/add-edit-dialog.component';
 import {CalendarModule} from "primeng/calendar";
 import {InputTextModule} from "primeng/inputtext";
-import { FileUploadComponent } from './file-upload/file-upload.component';
 import {MessageModule} from "primeng/message";
 import {ToggleButtonModule} from "primeng/togglebutton";
 import {SelectButtonModule} from "primeng/selectbutton";
@@ -33,7 +32,6 @@ import { StatisticsComponent } from './features/statistics/statistics.component'
     MyFridgeComponent,
     DeleteDialogComponent,
     AddEditDialogComponent,
-    FileUploadComponent,
     RecipesComponent,
     StatisticsComponent,
   ],

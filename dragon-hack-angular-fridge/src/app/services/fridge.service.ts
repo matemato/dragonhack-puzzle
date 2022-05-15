@@ -28,7 +28,6 @@ export class FridgeService {
   }
 
   store(item: Item | null) {
-    console.log(item);
     return this.http.post(`${this.baseUrl}/store2`, { data: item })
       .pipe(
         map((res: any) => {
@@ -60,7 +59,11 @@ export class FridgeService {
   }
 
   getStats() {
-    return this.http.get(`${this.baseUrl}/displayStatistics`,{responseType: 'text' })
+    return this.http.get(`${this.baseUrl}/displayStatistics`,{responseType: 'json' })
+  }
+
+  getTemps() {
+    return this.http.get(`${this.baseUrl}/humidity`,{responseType: 'json' })
   }
 
 }

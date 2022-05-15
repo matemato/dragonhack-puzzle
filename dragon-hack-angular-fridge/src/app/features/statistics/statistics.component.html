@@ -1,1 +1,14 @@
-<p>statistics works!</p>
+<div class="content">
+  <div>
+    <div class="highlight">
+      <h2 *ngIf="moneySaved">SAVED MONEY: {{moneySaved[0]}} €</h2>
+    </div>
+    <p-card *ngFor="let stat of stats" [header]="stat[1]" [style]="{'width': '25rem', 'margin-bottom': '2em', 'max-height':'130px'}">
+      <div class="lower-half">
+          <p>
+            You saved {{stat[0]}} € by using {{stat[1]}}
+          </p>
+      </div>
+    </p-card>
+  </div>
+</div>

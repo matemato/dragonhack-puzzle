@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FridgeService} from "../../services/fridge.service";
 
 @Component({
@@ -9,9 +9,20 @@ import {FridgeService} from "../../services/fridge.service";
 export class StatisticsComponent implements OnInit {
 
   constructor(private service: FridgeService) { }
+  stats : any = [];
+  moneySaved: any
 
   ngOnInit(): void {
-    this.service.getStats().subscribe(res => console.log(res))
+    this.getStats();
+
   }
 
+  private getStats() {
+    this.service.getStats().subscribe((res:any) => {
+      this.stats = Object.keys(res).map(function(personNamedIndex){
+        return res[personNamedIndex];
+      });
+      this.moneySaved = this.stats.pop();
+    })
+  }
 }

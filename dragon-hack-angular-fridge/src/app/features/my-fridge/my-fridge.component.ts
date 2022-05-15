@@ -36,6 +36,9 @@ export class MyFridgeComponent implements OnInit {
   addEditDialogOpen = false;
   isEdit = false;
 
+  optimalTemperature: number = 0;
+  currentTemperature: number = 2;
+
 
   constructor(private fridgeService: FridgeService,private fileUploadService: FileUploadService) {
   }
@@ -75,6 +78,7 @@ export class MyFridgeComponent implements OnInit {
   getAllItems() {
     this.fridgeService.getAll().subscribe(res => {
       this.ingredients = res.sort((a:any, b:any) => b.EXPERATIONDATE < a.EXPERATIONDATE ? 1: -1);
+      this.getSuggestedTemp();
     })
   }
 
@@ -99,7 +103,7 @@ export class MyFridgeComponent implements OnInit {
     setTimeout(()=>{
       this.file = $event.target.files[0];
       console.log(this.file)
-    },2000)
+    },3000)
 
   }
   loading: boolean = false; // Flag variable
@@ -158,8 +162,29 @@ export class MyFridgeComponent implements OnInit {
   private getFruits() {
     this.fridgeService.getFruits().subscribe(res => {
       this.datesOfUse = res;
-      console.log(this.datesOfUse)
       this.datesOfUse = this.datesOfUse.filter((el: any) => el.fridge !== 'not recommended')
+    })
+  }
+
+  getSuggestedTemp(){
+    const optimalTemperatures: any[] = [];
+    this.fridgeService.getTemps().subscribe(res=> {
+      var json = JSON.parse(res as string)
+      this.ingredients.forEach(el => {
+          var element = json.find((el2: any) => el2.product == el.NAME);
+          if (element != -1) {
+            optimalTemperatures.push(element)
+          }
+        }
+      )
+      var sum = 0;
+      console.log(optimalTemperatures)
+      optimalTemperatures.forEach(el => {
+        if(el!=undefined) {
+          sum = sum + el.optimal_temperature;
+        }
+      })
+      this.optimalTemperature = Math.floor(sum/optimalTemperatures.length);
     })
   }
 }

@@ -48,7 +48,7 @@
         [disabled]="selectedIngredients.length == 0"></button>
       <input type="file" id="files" (click)="onChange($event)" class="receipt-button hide">
       <input type="button" value="Upload receipt image" class="p-button-warning upload" onclick="document.getElementById('files').click();" pButton pRipple style="font-weight: 700"/>
-      <button [disabled]="file === undefined" class="p-button-help receipt-button" label="Get ingridients" pButton pRipple type="button" (click)="onUpload()"></button>
+      <button [disabled]="file === undefined" class="p-button-help receipt-button" label="Get ingredients" pButton pRipple type="button" (click)="onUpload()"></button>
     </div>
   </div>
 </ng-container>
@@ -81,9 +81,17 @@
   <div class="buttons-mobile">
     <button (click)="openDialog(null,false,$event)" class="p-button-raised p-button-success add-button-mobile" label="Add Ingredient" pButton
             pRipple type="button"></button>
-    <button class="p-button-info recipe-button-mobile" label="Search For Recipe" pButton pRipple type="button" *ngIf="selectedIngredients.length !== 0"></button>
+    <button class="p-button-info recipe-button-mobile" label="Search For Recipe" pButton pRipple type="button" disabled="selectedIngredients.length !== 0"></button>
+    <input type="button" value="Upload receipt image" class="p-button-warning upload" onclick="document.getElementById('files').click();" pButton pRipple style="font-weight: 700"/>
+    <button [disabled]="file === undefined" class="p-button-help receipt-button" label="Get ingredients" pButton pRipple type="button" (click)="onUpload()"></button>
   </div>
 </ng-container>
+
+<div class="temperatures">
+  <div class="optimal-temperature">Optimal Temperature {{optimalTemperature}} °C</div>
+  <div class="current-temperature">Optimal Temperature {{currentTemperature}} °C</div>
+</div>
+
 <app-delete-dialog
   (response)="closeDeleteDialog($event)"
   [ingredient]="selectedIngredient"
@@ -102,6 +110,5 @@
 
 
 
-<!--<app-file-upload></app-file-upload>-->
 
 
