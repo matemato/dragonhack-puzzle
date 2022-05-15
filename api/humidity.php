@@ -1,4 +1,4 @@
 <?php
-$homepage = file_get_contents('http://localhost/api/humidity.php');
-echo $homepage;
+ $homepage = file_get_contents('http://localhost/data/products_with_temperature_humidity.json');
+ echo $homepage;
 ?>
