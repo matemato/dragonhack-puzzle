@@ -74,8 +74,7 @@ export class MyFridgeComponent implements OnInit {
 
   getAllItems() {
     this.fridgeService.getAll().subscribe(res => {
-      this.ingredients = res;
-      console.log(this.ingredients)
+      this.ingredients = res.sort((a:any, b:any) => b.EXPERATIONDATE < a.EXPERATIONDATE ? 1: -1);
     })
   }
 
