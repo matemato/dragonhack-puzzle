@@ -103,7 +103,7 @@ export class MyFridgeComponent implements OnInit {
     setTimeout(()=>{
       this.file = $event.target.files[0];
       console.log(this.file)
-    },3000)
+    },4000)
 
   }
   loading: boolean = false; // Flag variable
