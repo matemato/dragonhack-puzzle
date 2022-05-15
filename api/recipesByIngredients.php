@@ -32,6 +32,7 @@ function search_recipes_by_ingredients($ingredients, $apiKey){
     echo $result;
 }
 
-search_recipes_by_ingredients($request["text"]);
+#search_recipes_by_ingredients($request["text"]);
+search_recipes_by_ingredients("banana");
 
 ?>

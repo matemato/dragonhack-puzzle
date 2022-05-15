@@ -1,5 +1,5 @@
 <?php	
-$apiKey = "7480326a15e243ccbb99b3c3283323ca";
+$apiKey = "m18Jj8lHLegVANDKKCdxzPZIvXpeP48l";
 #$response = detect_food_in_text("tomatoes grape");
 
 // function detect_food_in_text($text){       

@@ -5,10 +5,9 @@ $postdata = file_get_contents("php://input");
 
 if(isset($postdata) && !empty($postdata))
 {
-  // Extract the data.
-  $request = json_decode($postdata);
-  $request = json_decode(json_encode($request), true);
+  $postdata = htmlspecialchars($postdata);
 }
+
 
 
 $apiKey = "f17755694ab8485db5676b880d16dae9";
@@ -38,9 +37,9 @@ function detect_food_in_text($text, $apiKey){
  
     $result = curl_exec($ch);
  
-    json_encode(['data'=> $result]);
-    #echo $result;
+    #json_encode(['data'=> $result]);
+    echo $result;
 }
 
-detect_food_in_text($request["text"],$apiKey);
+detect_food_in_text($postdata,$apiKey);
 #detect_food_in_text("Banana, orange, chocolade", $apiKey);

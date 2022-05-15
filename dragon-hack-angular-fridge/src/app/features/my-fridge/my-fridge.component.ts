@@ -115,7 +115,7 @@ export class MyFridgeComponent implements OnInit {
 
   getText(){
     var myHeaders = new Headers();
-    myHeaders.append("apikey", "cRcbOtWZbzOwSyj933D7B8sScfM4pa4Z");
+    myHeaders.append("apikey", "m18Jj8lHLegVANDKKCdxzPZIvXpeP48l");
     var raw = this.file;
     var requestOptions: RequestInit = {
       method: 'POST',
@@ -128,8 +128,8 @@ export class MyFridgeComponent implements OnInit {
       .then(result => {
         this.receiptText = result;
         this.receiptText = JSON.parse(this.receiptText)['all_text'].toLowerCase()
-        console.log(this.receiptText)
         this.fridgeService.textToIngredients(this.receiptText).subscribe((res: any) => console.log(res))
+
       })
       .catch(error => console.log('error', error));
 
