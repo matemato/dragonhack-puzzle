@@ -87,12 +87,12 @@ export class MyFridgeComponent implements OnInit {
   }
 
 
-  file!: File;
+  file: any;
   onChange($event: any) {
     setTimeout(()=>{
       this.file = $event.target.files[0];
       console.log(this.file)
-    },2000)
+    },5000)
 
   }
   loading: boolean = false; // Flag variable
@@ -128,8 +128,8 @@ export class MyFridgeComponent implements OnInit {
       .then(result => {
         this.receiptText = result;
         this.receiptText = JSON.parse(this.receiptText)['all_text'].toLowerCase()
+        console.log(this.receiptText)
         this.fridgeService.textToIngredients(this.receiptText).subscribe((res: any) => console.log(res))
-
       })
       .catch(error => console.log('error', error));
 
