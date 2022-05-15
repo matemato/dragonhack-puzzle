@@ -22,12 +22,12 @@ try{
             array_push($tmpA, array($tmp, $r["NAME_USED"]));
         }
         array_push($tmpA, array($sum, "Final sum"));
-    }
-    // }else{
-    //     echo'
-    //     You have not used any items before expiration date, yet. Try better.
-    //     ';
-    // } 
+    }else{
+        // echo'
+        // You have not used any items before expiration date, yet. Try better.
+        // ';
+        array_push($tmpA, array(0, "Final sum"));
+    } 
    echo json_encode($tmpA);  
     
 }catch (Exception $e) {
