@@ -8,19 +8,24 @@ try{
     $res = $statement->fetchAll();    
     if(isset($res[0]) && !empty($res[0])){
         $sum = 0;
+        $tmp = array();
         foreach($res as $r){            
             $tmp = $r["UNITS"]*$r["PRICE_USED"]; 
             $sum+=$tmp;      
-            echo '
+            // echo '
+            // You have saved: '.$tmp.' with succesfully using '.$r["NAME_USED"].' before expiration.
+            // ';
+            $tmp = array_push($tmp, '
             You have saved: '.$tmp.' with succesfully using '.$r["NAME_USED"].' before expiration.
-            ';
+            ');
         }
+        $tmp = array_push($tmp, $sum);
     }else{
         echo'
         You have not used any items before expiration date, yet. Try better.
         ';
     } 
-    echo 'Suma is'.$sum;   
+    echo $tmp;   
     
 }catch (Exception $e) {
     echo 'Caught exception: ',  $e->getMessage(), "\n";
